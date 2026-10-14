@@ -175,6 +175,9 @@ const bars = ["78%", "58%", "88%", "66%"];
   }
   /* Four days side by side; a phone swipes, the next day peeking in */
   .strip {
+    /* Contains the absolutely positioned .sr-only text of later days; without it
+       those escape the scroller and widen the page on a phone. */
+    position: relative;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: minmax(248px, 1fr);
