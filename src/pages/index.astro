@@ -33,7 +33,7 @@ const nav = [
   title="kaelith — Türkçe CS2"
   description={`Kaelith: gündüz Full Stack yazılımcı, gece FACEIT Level 10. Türkçe CS2 yayını her gece ${streamTime}. Bu haftanın videoları, 2500 ELO yolu, ayarlar ve ekipman.`}
 >
-  <SiteHeader nav={nav} sticky>
+  <SiteHeader nav={nav} sticky menuLink={{ href: "/klipler", label: "Klipler" }} menuNote={`Her gece ${streamTime} canlı · Türkçe CS2`}>
     <Fragment slot="action">
       <a class="btn btn--pill pill when-offline" href={links.youtube}><Icon name="play" size={16} />YouTube</a>
       <a class="btn btn--pill pill when-live" href={links.kick}><span class="red pulse" aria-hidden="true"></span>CANLI · KICK</a>
@@ -69,5 +69,11 @@ const nav = [
     height: 10px;
     border-radius: 999px;
     background: var(--red);
+  }
+  @media (max-width: 820px) {
+    .pill {
+      padding: 0 14px;
+      font-size: 14px;
+    }
   }
 </style>

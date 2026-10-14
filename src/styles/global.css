@@ -35,6 +35,16 @@ button {
   display: none !important;
 }
 
+/* Section links land below the sticky bar, not under it */
+[id] {
+  scroll-margin-top: 76px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 /* Live or not (Kick, scripts/live.ts sets data-live on <html>): both states are in the page. */
 html:not([data-live]) .when-live,
 html[data-live] .when-offline {

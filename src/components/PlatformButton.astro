@@ -58,6 +58,10 @@ const { platform, href, filled = false, sub, live = false } = Astro.props;
     line-height: 1;
     letter-spacing: 0.04em;
   }
+  /* On a 360px phone the word would squeeze the icon to a dot */
+  .name :global(svg) {
+    flex: 0 0 auto;
+  }
   .sub {
     display: inline-flex;
     align-items: center;

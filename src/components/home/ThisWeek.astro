@@ -186,6 +186,11 @@ const bars = ["78%", "58%", "88%", "66%"];
     scroll-snap-type: x mandatory;
     padding-bottom: 6px;
   }
+  @media (max-width: 820px) {
+    .strip {
+      grid-auto-columns: 84%;
+    }
+  }
   .day {
     scroll-snap-align: start;
     display: flex;
