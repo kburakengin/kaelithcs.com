@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-12T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Premier de patlatmaca",
-      "url": "https://www.youtube.com/shorts/Mh4ukJ6y3K8"
-    },
-    {
       "zaman": "2026-10-13T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-10-14T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #10",
+      "short": false,
+      "baslik": "İlk yarı şov, ikinci yarı kayboldum 💀 | CS2 DUST2 10-13 - FACEIT 2500 ELO Yolu #10",
+      "url": "https://www.youtube.com/watch?v=QU19imr6vcc"
     },
     {
       "zaman": "2026-10-14T09:30:00.000Z",
@@ -120,6 +115,11 @@
       "zaman": "2026-10-20T15:00:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-10-21T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
     }
   ],
   "elo": {
