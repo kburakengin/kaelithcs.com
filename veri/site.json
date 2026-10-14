@@ -1,0 +1,178 @@
+{
+  "takvim": [
+    {
+      "zaman": "2026-10-12T15:00:00.000Z",
+      "tur": "Short",
+      "short": true,
+      "baslik": "Premier de patlatmaca",
+      "url": "https://www.youtube.com/shorts/Mh4ukJ6y3K8"
+    },
+    {
+      "zaman": "2026-10-13T09:30:00.000Z",
+      "tur": "Short",
+      "short": true,
+      "baslik": "3 kişi 3 kafa, sadece headshot | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/bdvTpm8TlpM"
+    },
+    {
+      "zaman": "2026-10-13T15:00:00.000Z",
+      "tur": "Short",
+      "short": true,
+      "baslik": "MP9'dan AK'ye: 4K, 3 HS | CS2 Inferno",
+      "url": "https://www.youtube.com/shorts/IE9-R-EzQA8"
+    },
+    {
+      "zaman": "2026-10-14T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-10-14T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-14T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-15T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-10-15T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-15T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-16T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-10-16T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-16T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-17T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-10-17T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-17T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-18T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-10-18T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-18T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-19T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-10-19T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-19T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-20T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-10-20T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-20T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    }
+  ],
+  "elo": {
+    "simdi": 2135,
+    "baslangic": 2000,
+    "hedef": 2500,
+    "maclar": [
+      {
+        "zaman": "2026-10-05T22:39:26.488Z",
+        "elo": 2035
+      },
+      {
+        "zaman": "2026-10-06T20:10:33.823Z",
+        "elo": 2036
+      },
+      {
+        "zaman": "2026-10-08T21:57:49.841Z",
+        "elo": 2065
+      },
+      {
+        "zaman": "2026-10-09T21:45:56.465Z",
+        "elo": 2125
+      },
+      {
+        "zaman": "2026-10-09T22:43:52.977Z",
+        "elo": 2141
+      },
+      {
+        "zaman": "2026-10-11T23:24:43.011Z",
+        "elo": 2142
+      },
+      {
+        "zaman": "2026-10-12T22:10:15.432Z",
+        "elo": 2139
+      },
+      {
+        "zaman": "2026-10-12T22:54:56.046Z",
+        "elo": 2136
+      },
+      {
+        "zaman": "2026-10-13T22:04:46.788Z",
+        "elo": 2138
+      },
+      {
+        "zaman": "2026-10-13T22:56:15.782Z",
+        "elo": 2135
+      }
+    ]
+  }
+}
+

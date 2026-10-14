@@ -26,10 +26,27 @@ a{color:#12FC10;text-decoration:none}a:hover{color:#F2F5F2}
 .k-copy:hover{color:#060807;background:#12FC10}
 .k-nav a{color:#8A968E}.k-nav a:hover{color:#F2F5F2}
 .k-social:hover{color:#060807;background:#12FC10;border-color:#12FC10}
+.k-live[hidden]{display:none !important}
+.k-live:hover{color:#060807}
+.k-pulse{animation:k-pulse 1.4s ease-in-out infinite}
+@keyframes k-pulse{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.k-pulse{animation:none}}
+.k-gun{display:grid;grid-template-columns:110px 1fr;gap:8px 20px;padding:18px 0;border-top:1px solid #1E2A24}
+.k-gun:first-child{border-top:0}
+@media (max-width:560px){.k-gun{grid-template-columns:1fr}}
+.k-satir{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;padding:6px 0;color:#F2F5F2}
+a.k-satir:hover{color:#12FC10}
 </style>
 </head>
 <body>
 <div style="min-height: 100vh; background: #060807">
+
+<!-- Live strip: shown only while Kick says the stream is on (script below) -->
+<a id="canli-serit" class="k-live" href="https://kick.com/kaelithcs" hidden style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 14px; min-height: 48px; padding: 8px 16px; background: #12FC10; color: #060807; font-weight: 700; font-size: 16px; text-align: center">
+<span style="display: inline-flex; align-items: center; gap: 8px; letter-spacing: .1em"><span aria-hidden="true" class="k-pulse" style="width: 10px; height: 10px; border-radius: 999px; background: #FF2E3B"></span>ŞU AN CANLI</span>
+<span id="canli-baslik" style="font-weight: 600; overflow-wrap: anywhere"></span>
+<span style="text-decoration: underline">Kick'te izle →</span>
+</a>
 
 <!-- Top bar -->
 <header style="position: relative; z-index: 2; border-bottom: 1px solid #1E2A24; background: rgba(6,8,7,.92)">
@@ -39,6 +56,8 @@ a{color:#12FC10;text-decoration:none}a:hover{color:#F2F5F2}
 <img src="img/yazi.png" alt="KAELITH" style="height: 18px; width: auto">
 </a>
 <nav class="k-nav" aria-label="Bölümler" style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 15px; font-weight: 600; letter-spacing: .04em">
+<a href="#takvim">Bu hafta</a>
+<a href="#elo">ELO</a>
 <a href="#hakkimda">Hakkımda</a>
 <a href="#seriler">Seriler</a>
 <a href="#ayarlar">Ayarlar</a>
@@ -73,11 +92,11 @@ Gündüz kod yazıyorum,<br><span style="color: #12FC10; text-shadow: 0 0 8px rg
 Türkçe CS2 yayını. Hedef 2500 ELO, maçların hepsi kayıtta: iyisi de, kötüsü de. Yayındaki sesleri, komutları ve klipleri kendi yazdığım bot yapıyor.
 </p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px">
-<a class="k-btn-yt" href="https://www.youtube.com/@kaelithcs" style="display: inline-flex; align-items: center; gap: 12px; min-height: 60px; padding: 0 30px; border-radius: 12px; background: #12FC10; color: #060807; font-family: 'Bebas Neue', Impact, sans-serif; font-size: 30px; letter-spacing: .04em; box-shadow: 0 0 6px rgba(18,252,16,.7), 0 0 24px rgba(18,252,16,.3)">
+<a id="ana-buton" class="k-btn-yt" href="https://www.youtube.com/@kaelithcs" style="display: inline-flex; align-items: center; gap: 12px; min-height: 60px; padding: 0 30px; border-radius: 12px; background: #12FC10; color: #060807; font-family: 'Bebas Neue', Impact, sans-serif; font-size: 30px; letter-spacing: .04em; box-shadow: 0 0 6px rgba(18,252,16,.7), 0 0 24px rgba(18,252,16,.3)">
 <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="7 4 20 12 7 20 7 4"></polygon></svg>
-YouTube'da izle
+<span id="ana-buton-yazi">YouTube'da izle</span>
 </a>
-<a class="k-btn-ghost" href="https://kick.com/kaelithcs" style="display: inline-flex; align-items: center; min-height: 60px; padding: 0 22px; border: 1px solid #2E3D35; border-radius: 12px; color: #F2F5F2; font-weight: 600; font-size: 16px">
+<a id="ikinci-buton" class="k-btn-ghost" href="https://kick.com/kaelithcs" style="display: inline-flex; align-items: center; min-height: 60px; padding: 0 22px; border: 1px solid #2E3D35; border-radius: 12px; color: #F2F5F2; font-weight: 600; font-size: 16px">
 Canlı: kick.com/kaelithcs
 </a>
 </div>
@@ -91,6 +110,41 @@ Canlı: kick.com/kaelithcs
 <span style="font-family: 'Bebas Neue', Impact, sans-serif; font-size: 34px; line-height: 1; color: #FF5500">2500 ELO</span>
 </div>
 </div>
+</div>
+</section>
+
+<!-- This week: from veri/site.json (kaelith-clipper src/site.js) -->
+<section id="takvim" style="border-top: 1px solid #1E2A24">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: .16em; color: #12FC10">YOUTUBE'DA</p>
+<h2 style="margin: 0; font-family: 'Bebas Neue', Impact, sans-serif; font-weight: 400; font-size: 64px; line-height: .95">Bu hafta</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #8A968E">Yeni video çıkınca başlığı ve linki burada belirir. Canlı yayın her gece 23:00.</p>
+</div>
+<div id="takvim-liste" style="flex: 2 1 520px; min-width: 0; font-size: 17px">
+<p style="margin: 0; color: #8A968E">Takvim yükleniyor…</p>
+</div>
+</div>
+</section>
+
+<!-- ELO road -->
+<section id="elo" style="border-top: 1px solid #1E2A24; background: #0C1210">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+<div>
+<p style="margin: 0 0 8px; font-size: 13px; font-weight: 600; letter-spacing: .16em; color: #12FC10">FACEIT</p>
+<h2 style="margin: 0; font-family: 'Bebas Neue', Impact, sans-serif; font-weight: 400; font-size: 64px; line-height: .95">2500 ELO Yolu</h2>
+</div>
+<div style="display: flex; align-items: baseline; gap: 12px">
+<span id="elo-simdi" style="font-family: 'Bebas Neue', Impact, sans-serif; font-size: 64px; line-height: 1; color: #FF5500">—</span>
+<span id="elo-kalan" style="font-size: 16px; color: #8A968E"></span>
+</div>
+</div>
+<div role="img" id="elo-bar-kutu" aria-label="2000'den 2500'e ilerleme" style="position: relative; height: 18px; border-radius: 999px; background: #060807; border: 1px solid #1E2A24; overflow: hidden">
+<div id="elo-bar" style="height: 100%; width: 0; border-radius: 999px; background: #12FC10; box-shadow: 0 0 6px #12FC10, 0 0 18px rgba(18,252,16,.5); transition: width .8s ease"></div>
+</div>
+<div style="display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; color: #8A968E"><span>2000</span><span>2250</span><span>2500</span></div>
+<div id="elo-grafik" style="min-height: 0"></div>
 </div>
 </section>
 
@@ -300,6 +354,140 @@ Canlı: kick.com/kaelithcs
 
 </div>
 <script>
+const $ = (id) => document.getElementById(id);
+function el(tag, style, text) {
+  const e = document.createElement(tag);
+  if (style) e.style.cssText = style;
+  if (text != null) e.textContent = text;
+  return e;
+}
+
+// Live: Kick's channel API answers the browser. On, the main button goes to
+// Kick and YouTube steps back; off or unreachable, the page stays as it is.
+fetch("https://kick.com/api/v2/channels/kaelithcs")
+  .then((r) => (r.ok ? r.json() : null))
+  .then((c) => {
+    const live = c && c.livestream && c.livestream.is_live;
+    if (!live) return;
+    $("canli-serit").hidden = false;
+    $("canli-baslik").textContent = c.livestream.session_title || "";
+    $("ana-buton").href = "https://kick.com/kaelithcs";
+    $("ana-buton-yazi").textContent = "Şu an canlı · Kick'te izle";
+    $("ikinci-buton").href = "https://www.youtube.com/@kaelithcs";
+    $("ikinci-buton").textContent = "YouTube'da izle";
+  })
+  .catch(() => {});
+
+fetch("veri/site.json", { cache: "no-cache" })
+  .then((r) => (r.ok ? r.json() : null))
+  .then((d) => {
+    if (!d) return;
+    week(d.takvim || []);
+    elo(d.elo || {});
+  })
+  .catch(() => ($("takvim-liste").firstElementChild.textContent = "Takvim şu an yüklenemedi."));
+
+function week(all) {
+  // What came out lately and the next four days; a week of "Short" rows is a wall.
+  const until = new Date();
+  until.setHours(0, 0, 0, 0);
+  until.setDate(until.getDate() + 4);
+  const items = all.filter((it) => new Date(it.zaman) < until);
+  const box = $("takvim-liste");
+  box.textContent = "";
+  if (!items.length) return box.append(el("p", "margin:0;color:#8A968E", "Bu hafta için plan henüz yok."));
+  const dayKey = (d) => d.toLocaleDateString("tr-TR");
+  const today = new Date();
+  const tomorrow = new Date(Date.now() + 86400e3);
+  const groups = new Map();
+  for (const it of items) {
+    const at = new Date(it.zaman);
+    if (!groups.has(dayKey(at))) groups.set(dayKey(at), { at, list: [] });
+    groups.get(dayKey(at)).list.push(it);
+  }
+  for (const { at, list } of groups.values()) {
+    const row = el("div");
+    row.className = "k-gun";
+    const name = dayKey(at) === dayKey(today) ? "Bugün" : dayKey(at) === dayKey(tomorrow) ? "Yarın" : at.toLocaleDateString("tr-TR", { weekday: "long" });
+    const head = el("div", "display:flex;flex-direction:column;gap:2px");
+    head.append(el("span", "font-weight:700;color:#F2F5F2", name), el("span", "font-size:14px;color:#8A968E", at.toLocaleDateString("tr-TR", { day: "numeric", month: "long" })));
+    const col = el("div", "display:flex;flex-direction:column;min-width:0");
+    for (const it of list) {
+      const line = el(it.url ? "a" : "div");
+      line.className = "k-satir";
+      if (it.url) line.href = it.url;
+      const time = new Date(it.zaman).toLocaleTimeString("tr-TR", { hour: "2-digit", minute: "2-digit" });
+      line.append(el("span", "font-family:ui-monospace,Consolas,monospace;font-size:15px;color:#8A968E", time));
+      const series = it.tur !== "Short";
+      line.append(el("span", "font-weight:700;color:" + (series ? "#12FC10" : "#F2F5F2"), it.tur));
+      if (it.baslik) line.append(el("span", "min-width:0;overflow-wrap:anywhere;color:#C9D1CB", it.baslik + " →"));
+      col.append(line);
+    }
+    row.append(head, col);
+    box.append(row);
+  }
+}
+
+function elo(e) {
+  if (!Number.isFinite(e.simdi)) return;
+  const from = e.baslangic || 2000;
+  const to = e.hedef || 2500;
+  $("elo-simdi").textContent = e.simdi;
+  $("elo-kalan").textContent = e.simdi >= to ? "Hedefe ulaştı" : `2500'e ${to - e.simdi} kaldı`;
+  const pct = Math.max(0, Math.min(1, (e.simdi - from) / (to - from)));
+  $("elo-bar").style.width = (pct * 100).toFixed(1) + "%";
+  $("elo-bar-kutu").setAttribute("aria-label", `${from}'den ${to}'e: şu an ${e.simdi}`);
+
+  // ELO after each match, with today's reading last.
+  const pts = (e.maclar || []).map((p) => ({ t: new Date(p.zaman), v: p.elo }));
+  if (pts.length && pts[pts.length - 1].v !== e.simdi) pts.push({ t: new Date(), v: e.simdi });
+  if (pts.length < 2) return;
+  const W = 1000, H = 220, P = 28;
+  const lo = Math.min(...pts.map((p) => p.v)) - 20;
+  const hi = Math.max(...pts.map((p) => p.v)) + 20;
+  const x = (i) => P + (i * (W - 2 * P)) / (pts.length - 1);
+  const y = (v) => H - P - ((v - lo) * (H - 2 * P)) / (hi - lo);
+  const NS = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", `Maç maç ELO: ${pts[0].v}'den ${e.simdi}'e`);
+  svg.style.cssText = "display:block;width:100%;height:auto;overflow:visible";
+  const line = document.createElementNS(NS, "polyline");
+  line.setAttribute("points", pts.map((p, i) => `${x(i)},${y(p.v)}`).join(" "));
+  line.setAttribute("fill", "none");
+  line.setAttribute("stroke", "#12FC10");
+  line.setAttribute("stroke-width", "3");
+  line.setAttribute("stroke-linejoin", "round");
+  line.style.filter = "drop-shadow(0 0 6px rgba(18,252,16,.6))";
+  svg.append(line);
+  pts.forEach((p, i) => {
+    const c = document.createElementNS(NS, "circle");
+    c.setAttribute("cx", x(i));
+    c.setAttribute("cy", y(p.v));
+    c.setAttribute("r", i === pts.length - 1 ? 7 : 4);
+    c.setAttribute("fill", i === pts.length - 1 ? "#FF5500" : "#12FC10");
+    const tip = document.createElementNS(NS, "title");
+    tip.textContent = `${p.t.toLocaleDateString("tr-TR", { day: "numeric", month: "long" })}: ${p.v}`;
+    c.append(tip);
+    svg.append(c);
+  });
+  for (const [v, anchor, i] of [[pts[0].v, "start", 0], [e.simdi, "end", pts.length - 1]]) {
+    const t = document.createElementNS(NS, "text");
+    t.setAttribute("x", x(i));
+    t.setAttribute("y", y(v) - 14);
+    t.setAttribute("text-anchor", anchor);
+    t.setAttribute("fill", "#F2F5F2");
+    t.setAttribute("font-size", "22");
+    t.setAttribute("font-family", "Saira, sans-serif");
+    t.setAttribute("font-weight", "600");
+    t.textContent = v;
+    svg.append(t);
+  }
+  const cap = el("p", "margin:12px 0 0;font-size:14px;color:#8A968E", `Her nokta bir FACEIT maçı (${(e.maclar || []).length} maç), turuncu nokta şu an.`);
+  $("elo-grafik").append(svg, cap);
+}
+
 // Copy buttons: the settings viewers paste into CS2.
 for (const b of document.querySelectorAll("[data-copy]")) {
   b.addEventListener("click", async () => {
