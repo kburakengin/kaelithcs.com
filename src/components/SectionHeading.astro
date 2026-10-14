@@ -1,0 +1,28 @@
+---
+/** Eyebrow + display title, with an optional aside on the right (a link, a number). */
+interface Props {
+  eyebrow: string;
+  title: string;
+  /** Heading level; h2 for page sections. */
+  as?: "h1" | "h2";
+}
+const { eyebrow, title, as: Tag = "h2" } = Astro.props;
+---
+
+<div class="heading">
+  <div>
+    <p class="eyebrow">{eyebrow}</p>
+    <Tag class="display">{title}</Tag>
+  </div>
+  <slot />
+</div>
+
+<style>
+  .heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12px 24px;
+  }
+</style>

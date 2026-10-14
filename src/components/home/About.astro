@@ -1,0 +1,60 @@
+---
+/** His own words (his Kick "About"), first person. */
+interface Props {
+  streamTime: string;
+}
+const { streamTime } = Astro.props;
+---
+
+<section id="hakkimda" class="section section--alt">
+  <div class="container about">
+    <div class="who">
+      <p class="eyebrow">HAKKIMDA</p>
+      <h2 class="display">Ben Burak.</h2>
+    </div>
+    <div class="text">
+      <p>33 yaşındayım. Gündüz Full Stack yazılımcıyım, gece FACEIT Level 10. Her gece {streamTime}'te canlıyım: FACEIT, Premier, sohbet ve arkadaşlarla 5'li maçlar.</p>
+      <p>
+        Yayındaki tepki seslerini, <strong>!kd !hs</strong> komutlarını, klipleri ve Short'ları kendi yazdığım bot yapıyor. Bot bazen beni de ifşa ediyor; onun da bir serisi var.
+      </p>
+      <p class="sign">Kaelith — forged in mystery, striking first.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+  }
+  .who {
+    flex: 1 1 280px;
+    min-width: 0;
+  }
+  .text {
+    flex: 2 1 520px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 19px;
+    line-height: 1.7;
+    color: var(--text-2);
+  }
+  p {
+    margin: 0;
+  }
+  strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .sign {
+    margin-top: 8px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 16px;
+    font-style: italic;
+    color: var(--muted);
+  }
+</style>

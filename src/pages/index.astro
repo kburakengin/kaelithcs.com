@@ -1,0 +1,73 @@
+---
+import Base from "../layouts/Base.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import Icon from "../components/Icon.astro";
+import Hero from "../components/home/Hero.astro";
+import ThisWeek from "../components/home/ThisWeek.astro";
+import EloRoad from "../components/home/EloRoad.astro";
+import About from "../components/home/About.astro";
+import Series from "../components/home/Series.astro";
+import Settings from "../components/home/Settings.astro";
+import Gear from "../components/home/Gear.astro";
+import Commands from "../components/home/Commands.astro";
+import { loadSite } from "../lib/data";
+import { fallbackFacts, links } from "../data/channel";
+
+const site = await loadSite();
+const facts = site.kanal ?? fallbackFacts;
+const streamTime = facts.yayin.saat;
+const now = new Date();
+const nav = [
+  { href: "#takvim", label: "Bu hafta" },
+  { href: "#elo", label: "ELO" },
+  { href: "#hakkimda", label: "Hakkımda" },
+  { href: "#seriler", label: "Seriler" },
+  { href: "#ayarlar", label: "Ayarlar" },
+  { href: "#ekipman", label: "Ekipman" },
+  { href: "#komutlar", label: "Komutlar" },
+];
+---
+
+<Base
+  title="kaelith — Türkçe CS2"
+  description={`Kaelith: gündüz Full Stack yazılımcı, gece FACEIT Level 10. Türkçe CS2 yayını her gece ${streamTime}. Bu haftanın videoları, 2500 ELO yolu, ayarlar ve ekipman.`}
+>
+  <SiteHeader nav={nav} sticky>
+    <Fragment slot="action">
+      <a class="btn btn--pill pill when-offline" href={links.youtube}><Icon name="play" size={16} />YouTube</a>
+      <a class="btn btn--pill pill when-live" href={links.kick}><span class="red pulse" aria-hidden="true"></span>CANLI · KICK</a>
+    </Fragment>
+  </SiteHeader>
+  <main>
+    <Hero streamTime={streamTime} goal={site.elo.hedef} />
+    <ThisWeek items={site.takvim} now={now} />
+    <EloRoad elo={site.elo} />
+    <About streamTime={streamTime} />
+    <Series />
+    <Settings facts={facts} />
+    <Gear />
+    <Commands />
+  </main>
+  <SiteFooter streamTime={streamTime} />
+</Base>
+
+<script>
+  import { wireCopyButtons } from "../scripts/copy";
+  wireCopyButtons();
+</script>
+
+<style>
+  .pill {
+    border-color: var(--neon);
+    background: var(--neon);
+    color: var(--bg-0);
+    font-weight: 700;
+  }
+  .red {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: var(--red);
+  }
+</style>

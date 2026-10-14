@@ -168,5 +168,20 @@
         "elo": 2135
       }
     ]
+  },
+  "kanal": {
+    "yayin": {
+      "gun": "her gece",
+      "saat": "23:00"
+    },
+    "ayarlar": {
+      "dpi": 800,
+      "sens": 1.15,
+      "zoomSens": 1,
+      "cozunurluk": "1280x960 4:3 stretched",
+      "monitor": "BenQ XL2566X+ 400 Hz",
+      "crosshair": "CSEvyeo4xeGaJq4UZpTUTa26HJ5toXrBWdFUFPc9yd25dO"
+    }
   }
 }
+

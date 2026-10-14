@@ -1,0 +1,147 @@
+---
+/**
+ * One clip: the cover opens the preview, the button under it copies the
+ * command. Two targets, so a tap on a phone never does the other thing.
+ */
+import Icon from "../Icon.astro";
+import { searchText } from "../../lib/clips";
+import type { Clip } from "../../lib/types";
+
+interface Props {
+  clip: Clip;
+  index: number;
+}
+const { clip, index } = Astro.props;
+---
+
+<li class="card" data-clip={index} data-search={searchText(clip)}>
+  <button type="button" class="thumb" data-preview={index} aria-label={`${clip.title}: önizle`}>
+    {clip.img && <img src={clip.img} alt="" width="320" height="180" loading="lazy" />}
+    {
+      clip.video && (
+        <span class="play" aria-hidden="true">
+          <Icon name="play" size={14} />
+        </span>
+      )
+    }
+  </button>
+  <div class="body">
+    <p class="title">{clip.title}</p>
+    {clip.by && <p class="by">öneren @{clip.by}</p>}
+    <button type="button" class="cmd" data-copy={clip.cmd} aria-label={`${clip.cmd} komutunu kopyala`}>
+      <span class="mono" data-copy-label>{clip.cmd}</span>
+      <Icon name="copy" size={16} />
+    </button>
+  </div>
+</li>
+
+<style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+    transition: border-color 0.15s ease;
+  }
+  .card:hover {
+    border-color: var(--line-strong);
+  }
+  .thumb {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+    border: 0;
+    background: #000;
+    cursor: pointer;
+  }
+  .thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .play {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(6, 8, 7, 0.82);
+    color: var(--text);
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .thumb:hover .play {
+    background: var(--neon);
+    color: var(--bg-0);
+  }
+  .body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+  }
+  .title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .by {
+    margin: -6px 0 0;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .cmd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    min-height: var(--touch);
+    padding: 0 10px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--line-strong);
+    background: var(--bg-0);
+    color: var(--neon);
+    cursor: pointer;
+  }
+  .cmd:hover {
+    border-color: var(--neon);
+  }
+  .cmd .mono {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .cmd :global(svg) {
+    flex: 0 0 auto;
+    color: var(--muted);
+  }
+  /* Copied: the whole button turns neon for a moment (scripts/copy.ts) */
+  .cmd[data-state="copied"] {
+    justify-content: center;
+    border-color: var(--neon);
+    background: var(--neon);
+    color: var(--bg-0);
+  }
+  .cmd[data-state="copied"] :global(svg) {
+    display: none;
+  }
+</style>

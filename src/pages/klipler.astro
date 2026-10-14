@@ -1,0 +1,326 @@
+---
+/**
+ * kaelithcs.com/klipler: viewers pick a clip, copy its command and paste it
+ * in the stream chat. The list comes from the tablet panel at build; the site
+ * rebuilds on a schedule to pick up new clips (.github/workflows/deploy.yml).
+ */
+import Base from "../layouts/Base.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import Icon from "../components/Icon.astro";
+import ClipCard from "../components/clips/ClipCard.astro";
+import PreviewSheet from "../components/clips/PreviewSheet.astro";
+import CopyToast from "../components/clips/CopyToast.astro";
+import { loadClips, loadSite } from "../lib/data";
+import { fallbackFacts, links } from "../data/channel";
+
+const [clips, site] = await Promise.all([loadClips(), loadSite()]);
+const streamTime = (site.kanal ?? fallbackFacts).yayin.saat;
+// For the browser script; "<" escaped so a title can never close the tag.
+const data = JSON.stringify(clips).replace(/</g, "\\u003c");
+---
+
+<Base title="kaelith — klipler" description="Kaelith yayınında sohbetten çalınan klipler: önizle, komutu kopyala, yayında sohbete yapıştır.">
+  <SiteHeader>
+    <a slot="action" class="btn btn--pill back" href={links.kick}><span class="led" aria-hidden="true"></span>Yayına dön</a>
+  </SiteHeader>
+
+  <main>
+    <section class="intro">
+      <div class="container intro-inner">
+        <p class="eyebrow">SOHBETTEN YAYINA</p>
+        <h1>Klipler</h1>
+        <p class="lead">Komutu kopyala, yayında sohbete yapıştır, klip ekranda oynasın.</p>
+        <ol class="steps">
+          <li><span>1</span>Görsele dokun: önizle</li>
+          <li><span>2</span>Komuta dokun: kopyala</li>
+          <li><span>3</span>Sohbete yapıştır · iki klip arası 60 sn</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Sticky, so search and random stay in reach while scrolling -->
+    <section class="tools">
+      <div class="container tools-inner">
+        <label class="search">
+          <Icon name="search" />
+          <span class="sr-only">Klip ara</span>
+          <input type="search" placeholder="Klip ara: kemal, xantares…" autocomplete="off" data-search-input />
+        </label>
+        <div class="tools-right">
+          <button type="button" class="btn btn--neon random" data-copy="!klip">
+            <Icon name="shuffle" />
+            Rastgele <span class="mono" data-copy-label>!klip</span>
+          </button>
+          <span class="count" data-count>{clips.length} klip</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container list-wrap">
+        <ul class="grid">
+          {clips.map((clip, i) => <ClipCard clip={clip} index={i} />)}
+        </ul>
+        <div class="empty" data-empty hidden>
+          <p>“<span data-empty-term></span>” adıyla klip yok. Önermek ister misin?</p>
+          <a class="btn btn--neon" href="#oner">Klip öner</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="oner" class="section section--alt">
+      <div class="container suggest">
+        <div class="suggest-text">
+          <p class="eyebrow">LİSTEDE YOK MU?</p>
+          <h2 class="display">Klip öner</h2>
+          <ul>
+            <li>YouTube ya da X linki</li>
+            <li>En fazla 15 saniye</li>
+            <li>Onaylanınca listeye eklenir</li>
+          </ul>
+        </div>
+        <div class="suggest-box">
+          <code>!kliponer &lt;link&gt; [başlangıç-bitiş] [ad]</code>
+          <span class="example">Örnek: <span class="mono">!kliponer &lt;link&gt; 0:12-0:20 efsane</span></span>
+          <button type="button" class="btn btn--neon" data-copy="!kliponer " data-copied="Kopyalandı, linki ekle">
+            <span data-copy-label>!kliponer kopyala</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <SiteFooter variant="compact" streamTime={streamTime} />
+  <CopyToast />
+  <PreviewSheet />
+  <script type="application/json" id="clips-data" set:html={data} />
+</Base>
+
+<script>
+  import { startClipsPage } from "../scripts/clips-page";
+  startClipsPage();
+</script>
+
+<style>
+  .back {
+    border-color: var(--neon);
+    color: var(--neon);
+  }
+  .led {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--neon);
+  }
+  .intro {
+    background: var(--bg-1);
+    border-bottom: 1px solid var(--line);
+  }
+  .intro-inner {
+    padding-block: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .intro .eyebrow {
+    margin: 0;
+    font-size: 12px;
+  }
+  h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(56px, 9vw, 104px);
+    line-height: 0.9;
+  }
+  .lead {
+    margin: 0;
+    max-width: 560px;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--text-2);
+  }
+  .steps {
+    margin: 4px 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .steps li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px 6px 6px;
+    border-radius: 999px;
+    background: var(--bg-0);
+    border: 1px solid var(--line);
+    font-size: 14px;
+    color: var(--text-2);
+  }
+  .steps span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--neon);
+    color: var(--bg-0);
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .tools {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(6, 8, 7, 0.96);
+    border-bottom: 1px solid var(--line);
+  }
+  .tools-inner {
+    padding-block: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .search {
+    flex: 1 1 260px;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 0 14px;
+    border-radius: 12px;
+    background: var(--bg-1);
+    border: 1px solid var(--line-strong);
+    color: var(--muted);
+  }
+  .search:focus-within {
+    outline: 3px solid var(--neon);
+    outline-offset: 2px;
+  }
+  input {
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 46px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 16px;
+  }
+  input::placeholder {
+    color: #6b7770;
+  }
+  input::-webkit-search-cancel-button {
+    filter: invert(1);
+  }
+  .tools-right {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .random {
+    min-height: 48px;
+  }
+  .random .mono {
+    font-weight: 700;
+  }
+  .count {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .list-wrap {
+    padding-block: 16px 48px;
+  }
+  /* Two columns on a phone */
+  .grid {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 158px), 1fr));
+    gap: 12px;
+  }
+  .empty {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 24px 0;
+  }
+  .empty p {
+    margin: 0;
+    font-size: 17px;
+    color: var(--text-2);
+  }
+  .suggest {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px 48px;
+  }
+  .section > .suggest {
+    padding-block: 40px;
+  }
+  .suggest-text {
+    flex: 1 1 300px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .suggest-text .eyebrow {
+    margin: 0;
+    font-size: 12px;
+  }
+  .suggest-text .display {
+    font-size: 48px;
+  }
+  .suggest-text ul {
+    margin: 0;
+    padding: 0 0 0 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-2);
+  }
+  .suggest-box {
+    flex: 1 1 380px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 16px;
+    background: var(--bg-0);
+    border: 1px solid var(--line);
+  }
+  code {
+    font-family: var(--font-mono);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--neon);
+    overflow-wrap: anywhere;
+  }
+  .example {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+  .example .mono {
+    color: var(--text-2);
+  }
+</style>

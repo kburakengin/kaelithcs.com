@@ -1,0 +1,82 @@
+---
+import { commands } from "../../data/channel";
+---
+
+<section id="komutlar" class="section section--alt">
+  <div class="container row">
+    <div class="intro">
+      <p class="eyebrow">SOHBETTE</p>
+      <h2 class="display">Komutlar</h2>
+      <p class="lead">Yayında sohbete yaz, bot cevap versin. <strong>!klip</strong> yayına ses ve klip çaldırır.</p>
+      <a class="btn" href="/klipler/">Tüm klipler ve komutlar →</a>
+    </div>
+    <ul class="list">
+      {
+        commands.map(([cmd, what]) => (
+          <li>
+            <span class="mono cmd">{cmd}</span>
+            <span class="what">{what}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+  .intro {
+    flex: 1 1 360px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .intro .eyebrow {
+    margin: 0;
+  }
+  .lead {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-2);
+  }
+  strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .list {
+    flex: 1 1 420px;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  li {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: var(--bg-0);
+    border: 1px solid var(--line);
+  }
+  .cmd {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--neon);
+  }
+  .what {
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>

@@ -1,0 +1,34 @@
+/*
+ * KAELITH brand tokens: the Claude Design "Marka Kitabı" (kaelith-clipper
+ * brand/tokens.json), as CSS. Components use these names, never raw colours.
+ */
+:root {
+  --bg-0: #060807;
+  --bg-1: #0c1210;
+  --line: #1e2a24;
+  --line-strong: #2e3d35;
+  --text: #f2f5f2;
+  --text-2: #c9d1cb;
+  --muted: #8a968e;
+  --faint: #4f5d55;
+
+  --neon: #12fc10;
+  --red: #ff2e3b;
+  --red-soft: #ff6b73;
+  --yellow: #ffd60a;
+  --faceit: #ff5500;
+
+  --glow-neon: 0 0 6px #12fc10, 0 0 18px rgba(18, 252, 16, 0.6), 0 0 40px rgba(18, 252, 16, 0.25);
+  --glow-text: 0 0 8px rgba(18, 252, 16, 0.6), 0 0 28px rgba(18, 252, 16, 0.3);
+
+  --font-ui: "Saira", Bahnschrift, "Segoe UI", sans-serif;
+  --font-display: "Bebas Neue", Impact, sans-serif;
+  --font-mono: ui-monospace, Consolas, monospace;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-cam: 32px;
+  --page: 1200px;
+  --touch: 44px;
+}

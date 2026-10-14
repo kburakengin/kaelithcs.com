@@ -1,0 +1,152 @@
+@import "./tokens.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-0);
+  color: var(--text);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--neon);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--text);
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--neon);
+  outline-offset: 2px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Live or not (Kick, scripts/live.ts sets data-live on <html>): both states are in the page. */
+html:not([data-live]) .when-live,
+html[data-live] .when-offline {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Layout */
+.container {
+  max-width: var(--page);
+  margin: 0 auto;
+  padding-inline: 20px;
+}
+
+.section {
+  border-top: 1px solid var(--line);
+}
+.section--alt {
+  background: var(--bg-1);
+}
+.section > .container {
+  padding-block: 80px;
+}
+
+/* Section heading: small neon eyebrow over a big display title */
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--neon);
+}
+.display {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 0.95;
+}
+
+/* Series colours: the tag of a series is the same everywhere */
+.tone-faceit { --tone: var(--faceit); }
+.tone-red { --tone: var(--red); }
+.tone-yellow { --tone: var(--yellow); }
+.tone-neon { --tone: var(--neon); }
+
+.tag {
+  align-self: flex-start;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--tone, var(--neon));
+  color: var(--bg-0);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--touch);
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.btn--neon {
+  border-color: var(--neon);
+}
+.btn:hover:not(:disabled) {
+  background: var(--neon);
+  border-color: var(--neon);
+  color: var(--bg-0);
+}
+.btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.btn--pill {
+  border-radius: 999px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.pulse {
+  animation: pulse 1.4s ease-in-out infinite;
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.3;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pulse {
+    animation: none;
+  }
+}

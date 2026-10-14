@@ -1,0 +1,70 @@
+---
+/** After a copy: what was copied, and one tap back to the stream. */
+import { links } from "../../data/channel";
+---
+
+<div class="dock" role="status" aria-live="polite">
+  <div class="toast" data-toast hidden>
+    <span class="what">
+      <span class="mono" data-toast-cmd></span>
+      <span class="hint" data-toast-hint>kopyalandı · sohbete yapıştır</span>
+    </span>
+    <a href={links.kick}>Yayına dön</a>
+  </div>
+</div>
+
+<style>
+  .dock {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+    pointer-events: none;
+  }
+  .toast {
+    pointer-events: auto;
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 10px 10px 16px;
+    border-radius: var(--radius-md);
+    background: var(--neon);
+    color: var(--bg-0);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  }
+  .what {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .mono {
+    font-size: 15px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .hint {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  a {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--touch);
+    padding: 0 14px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-0);
+    color: var(--neon);
+    font-size: 15px;
+    font-weight: 700;
+  }
+</style>

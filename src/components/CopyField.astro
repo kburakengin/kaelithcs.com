@@ -1,0 +1,49 @@
+---
+/** A labelled value with a copy button (crosshair code, viewmodel, sens). */
+interface Props {
+  label: string;
+  value: string;
+}
+const { label, value } = Astro.props;
+---
+
+<div class="field">
+  <span class="label">{label}</span>
+  <code>{value}</code>
+  <button type="button" class="btn btn--neon copy" data-copy={value} aria-label={`${label} kopyala`}>
+    <span data-copy-label>Kopyala</span>
+  </button>
+</div>
+
+<style>
+  .field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 20px;
+    padding: 18px 20px;
+    border-radius: 16px;
+    background: var(--bg-0);
+    border: 1px solid var(--line);
+  }
+  .label {
+    flex: 0 0 120px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+  code {
+    flex: 1 1 320px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    font-family: var(--font-mono);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .copy {
+    color: var(--neon);
+    font-weight: 700;
+    font-size: 14px;
+  }
+</style>

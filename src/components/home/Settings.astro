@@ -1,0 +1,90 @@
+---
+/** In-game settings: the clipper's kanal.json values, copyable where a viewer pastes them. */
+import SectionHeading from "../SectionHeading.astro";
+import CopyField from "../CopyField.astro";
+import { graphics, viewmodel } from "../../data/channel";
+import type { ChannelFacts } from "../../lib/types";
+
+interface Props {
+  facts: ChannelFacts;
+}
+const { ayarlar: a } = Astro.props.facts;
+const [res, ...resRest] = a.cozunurluk.split(" ");
+const hz = a.monitor.match(/(\d+)\s*Hz/i)?.[1];
+const tiles = [
+  { label: "SENS", value: String(a.sens), note: `${a.dpi} DPI · eDPI ${Math.round(a.dpi * a.sens)} · zoom ${a.zoomSens}` },
+  { label: "ÇÖZÜNÜRLÜK", value: res.replace("x", "×"), note: `${resRest.join(" ")} · tam ekran` },
+  ...(hz ? [{ label: "MONİTÖR", value: `${hz} Hz`, note: "fps_max 0 · V-Sync kapalı" }] : []),
+];
+---
+
+<section id="ayarlar" class="section section--alt">
+  <div class="container stack">
+    <SectionHeading eyebrow="OYUN İÇİ" title="Ayarlar" />
+    <div class="tiles">
+      {
+        tiles.map((t) => (
+          <div class="tile">
+            <span class="label">{t.label}</span>
+            <span class="value">{t.value}</span>
+            <span class="note">{t.note}</span>
+          </div>
+        ))
+      }
+    </div>
+    <div class="fields">
+      <CopyField label="CROSSHAIR" value={a.crosshair} />
+      <CopyField label="VIEWMODEL" value={viewmodel} />
+      <CopyField label="SENS" value={`sensitivity ${a.sens}; zoom_sensitivity_ratio ${a.zoomSens}`} />
+    </div>
+    <p class="graphics">Grafik: {graphics}.</p>
+  </div>
+</section>
+
+<style>
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .tile {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 22px;
+    border-radius: 16px;
+    background: var(--bg-0);
+    border: 1px solid var(--line);
+  }
+  .label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+  .value {
+    font-family: var(--font-display);
+    font-size: 44px;
+    line-height: 1;
+  }
+  .note {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .fields {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .graphics {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+</style>

@@ -1,0 +1,78 @@
+---
+/**
+ * YouTube / Kick, same size and shape: the platform's name is the headline.
+ * The filled one is where to go right now (YouTube offline, Kick live).
+ */
+import Icon from "./Icon.astro";
+
+interface Props {
+  platform: "youtube" | "kick";
+  href: string;
+  filled?: boolean;
+  /** Line under the name; `live` adds the pulsing dot. */
+  sub: string;
+  live?: boolean;
+}
+const { platform, href, filled = false, sub, live = false } = Astro.props;
+---
+
+<a href={href} class:list={["platform", { filled }]}>
+  <span class="name"><Icon name={platform} size={26} />{platform === "youtube" ? "YOUTUBE" : "KICK"}</span>
+  <span class="sub">{live && <span class="dot pulse" aria-hidden="true" />}{sub}</span>
+</a>
+
+<style>
+  .platform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    min-height: 80px;
+    padding: 12px 18px;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--line-strong);
+    color: var(--text);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+  .platform:hover {
+    border-color: var(--neon);
+    color: var(--neon);
+  }
+  .filled {
+    border-color: var(--neon);
+    background: var(--neon);
+    color: var(--bg-0);
+    box-shadow: 0 0 6px rgba(18, 252, 16, 0.7), 0 0 24px rgba(18, 252, 16, 0.3);
+  }
+  .filled:hover {
+    color: var(--bg-0);
+    transform: translateY(-2px);
+    box-shadow: 0 0 8px rgba(18, 252, 16, 0.9), 0 0 32px rgba(18, 252, 16, 0.45);
+  }
+  .name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+  }
+  .sub {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+  .platform:not(.filled) .sub {
+    color: var(--muted);
+  }
+  .dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+</style>

@@ -1,0 +1,42 @@
+---
+/**
+ * Every page: head, fonts, the brand styles, and the live check (Kick) that
+ * flips `.when-live` / `.when-offline` parts of any page.
+ */
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+const { title, description, image = "/img/sahne.webp" } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#060807" />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+    <meta property="og:url" content={canonical} />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Saira:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <slot />
+    <script>
+      import { watchLive } from "../scripts/live";
+      watchLive();
+    </script>
+  </body>
+</html>

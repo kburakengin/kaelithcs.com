@@ -1,0 +1,277 @@
+---
+/**
+ * "Bu hafta": the last videos out (linked) and the next days, kind and time
+ * only. Rendered at build; the site rebuilds whenever the calendar changes.
+ */
+import SectionHeading from "../SectionHeading.astro";
+import { clock, dayName, shortDate, splitWeek, weekday } from "../../lib/schedule";
+import { links } from "../../data/channel";
+import type { CalendarItem } from "../../lib/types";
+
+interface Props {
+  items: CalendarItem[];
+  now: Date;
+}
+const { items, now } = Astro.props;
+const { latest, days } = splitWeek(items, now);
+// The redacted title bars vary in length, so the column does not look like a table.
+const bars = ["78%", "58%", "88%", "66%"];
+---
+
+<section id="takvim" class="section section--alt">
+  <div class="container stack">
+    <SectionHeading eyebrow="YOUTUBE'DA" title="Bu hafta">
+      <p class="note">Her gün yeni video. Başlıklar video çıkınca açılır.</p>
+    </SectionHeading>
+
+    {
+      latest.length > 0 && (
+        <div class="group">
+          <div class="group-head">
+            <h3>SON ÇIKANLAR</h3>
+            <a href={links.youtubeVideos}>Tüm videolar →</a>
+          </div>
+          <div class="latest">
+            {latest.map((v) => (
+              <a class={`card tone-${v.tone}`} href={v.url}>
+                <span class="card-top">
+                  <span class="tag">{v.tag}</span>
+                  <span class="when">
+                    {weekday(v.at)} · {clock(v.at)}
+                  </span>
+                </span>
+                <span class="title">{v.title}</span>
+                <span class="go">İZLE →</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )
+    }
+
+    {
+      days.length > 0 && (
+        <div class="group">
+          <h3>SIRADAKİLER</h3>
+          <div class="strip">
+            {days.map((d) => {
+              const name = dayName(d.date, now);
+              const near = name === "Bugün" || name === "Yarın";
+              return (
+                <div class:list={["day", { today: name === "Bugün" }]} data-day={d.date.toISOString()}>
+                  <div class="day-head">
+                    <span class="day-name" data-day-name>
+                      {name}
+                    </span>
+                    <span class="day-date">{near ? `${weekday(d.date, "short")} ${shortDate(d.date)}` : shortDate(d.date)}</span>
+                  </div>
+                  {d.slots.map((s, i) => (
+                    <div class:list={["slot", `tone-${s.tone}`, { next: s.next }]}>
+                      <span class="time">{clock(s.at)}</span>
+                      <span class="what">
+                        <span class="kind">
+                          <span class="mark" aria-hidden="true" />
+                          <span class="kind-name">{s.kind}</span>
+                          {s.next && <span class="next-label">SIRADAKİ</span>}
+                        </span>
+                        <span class="hatch" aria-hidden="true" style={`width: ${bars[i % bars.length]}`} />
+                        <span class="sr-only">başlık video çıkınca açılır</span>
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<script>
+  import { relabelDays } from "../../scripts/days";
+  relabelDays();
+</script>
+
+<style>
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .note {
+    margin: 0;
+    max-width: 380px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+  .group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .group-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .group-head a {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  h3 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+  }
+  .latest {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 20px;
+    border-radius: 16px;
+    background: var(--bg-0);
+    border: 1px solid var(--line);
+    color: var(--text);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .card:hover {
+    color: var(--text);
+    border-color: var(--neon);
+    transform: translateY(-3px);
+  }
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .when {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .go {
+    margin-top: auto;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--neon);
+  }
+  /* Four days side by side; a phone swipes, the next day peeking in */
+  .strip {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(248px, 1fr);
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 6px;
+  }
+  .day {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px;
+    border-radius: 16px;
+    background: var(--bg-0);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--line);
+  }
+  .day.today {
+    border-color: var(--line-strong);
+    border-top-color: var(--neon);
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 0 4px 8px;
+  }
+  .day-name {
+    font-family: var(--font-display);
+    font-size: 32px;
+    line-height: 1;
+  }
+  .today .day-name {
+    color: var(--neon);
+  }
+  .day-date {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .slot {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+  }
+  .slot.next {
+    border-color: var(--neon);
+    background: rgba(18, 252, 16, 0.06);
+  }
+  .time {
+    flex: 0 0 auto;
+    width: 54px;
+    font-family: var(--font-display);
+    font-size: 26px;
+    line-height: 1;
+  }
+  .what {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .kind {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 8px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .mark {
+    flex: 0 0 auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: var(--tone);
+  }
+  .kind-name {
+    white-space: nowrap;
+  }
+  .next-label {
+    margin-left: auto;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--neon);
+  }
+  /* The title is not out yet: a censor bar, in keeping with İFŞA */
+  .hatch {
+    display: block;
+    height: 8px;
+    border-radius: 2px;
+    background: repeating-linear-gradient(135deg, #26332c 0 5px, #111915 5px 10px);
+  }
+</style>

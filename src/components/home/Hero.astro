@@ -1,0 +1,240 @@
+---
+/** Who, when, and the two ways to watch; while live, Kick comes first. */
+import PlatformButton from "../PlatformButton.astro";
+import { links } from "../../data/channel";
+
+interface Props {
+  streamTime: string;
+  goal: number;
+}
+const { streamTime, goal } = Astro.props;
+---
+
+<section id="ust" class="hero">
+  <div class="container inner">
+    <div class="copy">
+      <div class="chips when-offline">
+        <span class="chip"><span class="led" aria-hidden="true"></span>HER GECE {streamTime}</span>
+        <span class="chip"><span class="faceit-dot" aria-hidden="true"></span>FACEIT LVL10</span>
+      </div>
+      <a class="live-card when-live" href={links.kick}>
+        <span class="live-row">
+          <span class="live-label"><span class="red-dot pulse" aria-hidden="true"></span>ŞU AN CANLI · KICK</span>
+          <span aria-hidden="true">→</span>
+        </span>
+        <span class="live-title" data-live-title></span>
+      </a>
+      <h1>Gündüz kod yazıyorum,<br /><span class="glow">gece FACEIT.</span></h1>
+      <p class="lead">
+        Türkçe CS2 yayını. Hedef {goal} ELO, maçların hepsi kayıtta: iyisi de, kötüsü de. Yayındaki sesleri, komutları ve klipleri kendi yazdığım bot
+        yapıyor.
+      </p>
+      <div class="pair when-offline">
+        <PlatformButton platform="youtube" href={links.youtube} filled sub="TÜM VİDEOLAR" />
+        <PlatformButton platform="kick" href={links.kick} sub={`CANLI · HER GECE ${streamTime}`} />
+      </div>
+      <div class="pair when-live">
+        <PlatformButton platform="kick" href={links.kick} filled live sub="ŞU AN CANLI" />
+        <PlatformButton platform="youtube" href={links.youtube} sub="TÜM VİDEOLAR" />
+      </div>
+    </div>
+    <div class="art">
+      <div class="frame">
+        <img src="/img/sahne.webp" alt="Kaelith, Mirage'da sandığa yaslanmış çay içiyor; yerde rakipler yatıyor" width="1200" height="800" />
+        <span class="live-badge when-live"><span class="pulse" aria-hidden="true"></span>CANLI</span>
+      </div>
+      <div class="goal">
+        <span>HEDEF</span>
+        <strong>{goal} ELO</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, rgba(6, 8, 7, 0.96) 0%, rgba(6, 8, 7, 0.82) 45%, rgba(6, 8, 7, 0.55) 100%), url(/img/duvar.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .inner {
+    padding-block: 72px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 48px;
+  }
+  .copy {
+    flex: 1 1 460px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--bg-1);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+  .led {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--neon);
+    box-shadow: 0 0 6px var(--neon), 0 0 14px rgba(18, 252, 16, 0.6);
+  }
+  .faceit-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    background: var(--faceit);
+  }
+  /* Red means live, and only that */
+  .live-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 14px 18px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--red);
+    background: #150b0c;
+    color: var(--text);
+  }
+  .live-card:hover {
+    color: var(--text);
+    border-color: var(--red-soft);
+  }
+  .live-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--red-soft);
+    font-weight: 700;
+  }
+  .live-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+  }
+  .red-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: var(--red);
+  }
+  .live-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+  h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(56px, 8vw, 104px);
+    line-height: 0.92;
+    letter-spacing: 0.01em;
+  }
+  .glow {
+    color: var(--neon);
+    text-shadow: var(--glow-text);
+  }
+  .lead {
+    margin: 0;
+    max-width: 520px;
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--text-2);
+  }
+  .pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    max-width: 520px;
+  }
+  .art {
+    flex: 1 1 420px;
+    min-width: 0;
+    position: relative;
+  }
+  .frame {
+    position: relative;
+    border-radius: var(--radius-cam);
+    overflow: hidden;
+    border: 3px solid var(--neon);
+    box-shadow: var(--glow-neon);
+  }
+  .frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: 70% 30%;
+  }
+  .live-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px 4px;
+    border-radius: 8px;
+    background: var(--red);
+    color: var(--bg-0);
+    font-family: var(--font-display);
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.08em;
+  }
+  .live-badge span {
+    width: 10px;
+    height: 10px;
+    margin-top: -2px;
+    border-radius: 999px;
+    background: var(--bg-0);
+  }
+  .goal {
+    position: absolute;
+    left: -12px;
+    bottom: -18px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+  }
+  .goal span {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+  }
+  .goal strong {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1;
+    color: var(--faceit);
+  }
+</style>

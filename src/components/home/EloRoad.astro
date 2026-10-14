@@ -1,0 +1,303 @@
+---
+/** 2000 to 2500: where he is, four numbers, and the line match by match. */
+import SectionHeading from "../SectionHeading.astro";
+import { eloRoad, signed } from "../../lib/elo";
+import { links } from "../../data/channel";
+import type { EloData } from "../../lib/types";
+
+interface Props {
+  elo: EloData;
+}
+const road = eloRoad(Astro.props.elo);
+---
+
+{
+  road && (
+    <section id="elo" class="section">
+      <div class="container stack">
+        <SectionHeading eyebrow="FACEIT" title={`${road.to} ELO Yolu`}>
+          <a class="more" href={links.youtubeVideos}>
+            Her maçı YouTube'da izle →
+          </a>
+        </SectionHeading>
+
+        <div class="road">
+          <div class="road-now">
+            <span style={`left: ${road.percent}%`}>{road.now}</span>
+          </div>
+          <div class="track" role="img" aria-label={`${road.from}'den ${road.to}'e: şu an ${road.now}, ${road.left} kaldı`}>
+            <div class="ticks" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+            </div>
+            <div class="fill" style={`width: ${road.percent}%`} />
+            <span class="knob" style={`left: ${road.percent}%`} />
+          </div>
+          <div class="ends">
+            <span>{road.from}</span>
+            <span class="goal">{road.to} · HEDEF</span>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="label">ŞU AN</span>
+            <span class="value now">{road.now}</span>
+          </div>
+          <div class="stat">
+            <span class="label">{road.to}'E KALAN</span>
+            <span class="value">{road.left}</span>
+          </div>
+          <div class="stat">
+            <span class="label">SON {road.count} MAÇ</span>
+            <span class="value delta">{signed(road.delta)}</span>
+          </div>
+          <div class="stat">
+            <span class="label">EN YÜKSEK</span>
+            <span class="value">{road.peak}</span>
+          </div>
+        </div>
+
+        <div class="chart-box">
+          <div class="chart-head">
+            <h3>MAÇ MAÇ ELO</h3>
+            <span>Her nokta bir FACEIT maçı</span>
+          </div>
+          {/* Labels are HTML, not SVG text, so they stay readable at phone width */}
+          <div class="chart" role="img" aria-label={`Son ${road.count} maçta ELO: ${road.first}'den ${road.now}'e`}>
+            {road.ticks.map((t) => (
+              <div class="tick" style={`top: ${t.y}%`} aria-hidden="true">
+                <span>{t.elo}</span>
+              </div>
+            ))}
+            <svg aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polyline points={road.points.map((p) => `${p.x},${p.y}`).join(" ")} />
+            </svg>
+            {road.points.map((p, i) => (
+              <span
+                class:list={["dot", { last: i === road.points.length - 1 }]}
+                style={`left: ${p.x}%; top: ${p.y}%`}
+                title={i === road.points.length - 1 ? `Şu an: ${p.elo}` : `${i + 1}. maç: ${p.elo}`}
+              />
+            ))}
+            <span class="first" style={`left: ${road.points[0].x}%; top: ${road.points[0].y}%`} aria-hidden="true">
+              {road.first}
+            </span>
+            <span class="last-label" style={`top: ${road.points.at(-1)!.y}%`} aria-hidden="true">
+              {road.now} · ŞU AN
+            </span>
+          </div>
+          <div class="axis" aria-hidden="true">
+            <span>{road.count} MAÇ ÖNCE</span>
+            <span>SON MAÇ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .more {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .road {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .road-now {
+    position: relative;
+    height: 34px;
+  }
+  .road-now span {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-family: var(--font-display);
+    font-size: 34px;
+    line-height: 1;
+    color: var(--faceit);
+  }
+  .track {
+    position: relative;
+    height: 20px;
+    border-radius: 999px;
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+  }
+  .ticks {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .ticks span:not(:last-child) {
+    border-right: 1px solid var(--line);
+  }
+  .fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 999px;
+    background: var(--neon);
+    box-shadow: 0 0 6px var(--neon), 0 0 18px rgba(18, 252, 16, 0.5);
+  }
+  .knob {
+    position: absolute;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    transform: translate(-50%, -50%);
+    border-radius: 999px;
+    background: var(--faceit);
+    border: 3px solid var(--bg-0);
+  }
+  .ends {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--muted);
+  }
+  .goal {
+    color: var(--text);
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 18px 20px;
+    border-radius: 16px;
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+  }
+  .label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+  }
+  .value {
+    font-family: var(--font-display);
+    font-size: 44px;
+    line-height: 1;
+  }
+  .now {
+    color: var(--faceit);
+  }
+  .delta {
+    color: var(--neon);
+  }
+  .chart-box {
+    padding: 20px;
+    border-radius: var(--radius-lg);
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .chart-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 6px 16px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  h3 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+  .chart {
+    position: relative;
+    height: 220px;
+  }
+  .tick {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-top: 1px dashed var(--line);
+  }
+  .tick span {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--faint);
+  }
+  svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+  polyline {
+    fill: none;
+    stroke: var(--neon);
+    stroke-width: 3;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+    filter: drop-shadow(0 0 6px rgba(18, 252, 16, 0.6));
+  }
+  .dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    border-radius: 999px;
+    background: var(--neon);
+    border: 2px solid var(--bg-1);
+  }
+  .dot.last {
+    width: 18px;
+    height: 18px;
+    background: var(--faceit);
+  }
+  .first {
+    position: absolute;
+    transform: translateX(-30%);
+    padding-top: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-2);
+  }
+  .last-label {
+    position: absolute;
+    right: 0;
+    transform: translateY(calc(-100% - 14px));
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--faceit);
+    white-space: nowrap;
+  }
+  .axis {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--faint);
+  }
+</style>

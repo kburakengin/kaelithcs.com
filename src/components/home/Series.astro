@@ -1,0 +1,77 @@
+---
+/** The YouTube series, each a door to the channel. */
+import SectionHeading from "../SectionHeading.astro";
+import { links, series } from "../../data/channel";
+---
+
+<section id="seriler" class="section">
+  <div class="container stack">
+    <SectionHeading eyebrow="YOUTUBE'DA" title="Seriler">
+      <a class="more" href={links.youtubeVideos}>Tüm videolar →</a>
+    </SectionHeading>
+    <div class="grid">
+      {
+        series.map((s) => (
+          <a class={`card tone-${s.tone}`} href={s.href}>
+            <span class="tag">{s.tag}</span>
+            <span class="title">{s.title}</span>
+            <span class="text">{s.text}</span>
+            <span class="when">{s.when}</span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .more {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 28px;
+    border-radius: var(--radius-lg);
+    background: var(--bg-1);
+    border: 1px solid var(--line);
+    color: var(--text);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .card:hover {
+    color: var(--text);
+    border-color: var(--neon);
+    transform: translateY(-3px);
+  }
+  .tag {
+    padding: 4px 10px;
+  }
+  .title {
+    font-family: var(--font-display);
+    font-size: 40px;
+    line-height: 0.95;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+  .when {
+    margin-top: auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--neon);
+  }
+</style>
