@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-13T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "MP9'dan AK'ye: 4K, 3 HS | CS2 Inferno",
-      "url": "https://www.youtube.com/shorts/IE9-R-EzQA8"
-    },
-    {
       "zaman": "2026-10-14T09:00:00.000Z",
       "tur": "2500 ELO Yolu #10",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-14T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "AK-47 ile 3K | CS2 Inferno",
+      "url": "https://www.youtube.com/shorts/YbftCJrsf38"
     },
     {
       "zaman": "2026-10-15T09:00:00.000Z",
@@ -118,6 +113,11 @@
     },
     {
       "zaman": "2026-10-21T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-21T15:00:00.000Z",
       "tur": "Short",
       "short": true
     }
