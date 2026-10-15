@@ -22,6 +22,11 @@
       "url": "https://www.youtube.com/shorts/YbftCJrsf38"
     },
     {
+      "zaman": "2026-10-16T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
       "zaman": "2026-10-16T09:30:00.000Z",
       "tur": "Short",
       "short": true
@@ -30,11 +35,6 @@
       "zaman": "2026-10-16T15:00:00.000Z",
       "tur": "Short",
       "short": true
-    },
-    {
-      "zaman": "2026-10-17T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
     },
     {
       "zaman": "2026-10-17T09:30:00.000Z",
@@ -103,6 +103,21 @@
     },
     {
       "zaman": "2026-10-21T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-22T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-10-22T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-22T15:00:00.000Z",
       "tur": "Short",
       "short": true
     }
