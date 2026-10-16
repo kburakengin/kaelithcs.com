@@ -2,13 +2,6 @@
   "takvim": [
     {
       "zaman": "2026-10-16T15:00:00.000Z",
-      "tur": "Haftanın Montajı #2",
-      "short": false,
-      "baslik": "Bir haftalık CS2, tek dakikada 🎧 | Haftanın Montajı #2",
-      "url": "https://www.youtube.com/watch?v=p8aIs3ABAtk"
-    },
-    {
-      "zaman": "2026-10-16T15:00:00.000Z",
       "tur": "Short",
       "short": true,
       "baslik": "Pistol round'da USP-S ile 3 HS | CS2 Inferno",
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-16T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Easy peasy lemon squeezy | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/Aeo5_t9QPb0"
     },
     {
       "zaman": "2026-10-17T09:00:00.000Z",
@@ -148,6 +143,11 @@
     },
     {
       "zaman": "2026-10-23T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-23T19:30:00.000Z",
       "tur": "Short",
       "short": true
     }
