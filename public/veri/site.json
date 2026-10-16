@@ -37,6 +37,16 @@
       "short": false
     },
     {
+      "zaman": "2026-10-16T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-17T09:00:00.000Z",
+      "tur": "Tam maç",
+      "short": false
+    },
+    {
       "zaman": "2026-10-17T09:30:00.000Z",
       "tur": "Short",
       "short": true
@@ -62,6 +72,16 @@
       "short": true
     },
     {
+      "zaman": "2026-10-18T17:00:00.000Z",
+      "tur": "KAELITH İFŞA",
+      "short": false
+    },
+    {
+      "zaman": "2026-10-18T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
       "zaman": "2026-10-19T09:00:00.000Z",
       "tur": "2500 ELO Yolu",
       "short": false
@@ -73,6 +93,11 @@
     },
     {
       "zaman": "2026-10-19T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-19T19:30:00.000Z",
       "tur": "Short",
       "short": true
     },
@@ -92,6 +117,11 @@
       "short": true
     },
     {
+      "zaman": "2026-10-20T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
       "zaman": "2026-10-21T09:00:00.000Z",
       "tur": "2500 ELO Yolu",
       "short": false
@@ -107,6 +137,11 @@
       "short": true
     },
     {
+      "zaman": "2026-10-21T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
       "zaman": "2026-10-22T09:00:00.000Z",
       "tur": "2500 ELO Yolu",
       "short": false
@@ -118,6 +153,16 @@
     },
     {
       "zaman": "2026-10-22T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-22T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-23T09:30:00.000Z",
       "tur": "Short",
       "short": true
     }
