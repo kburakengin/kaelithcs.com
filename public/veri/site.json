@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-16T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "AK-47 ile 3 HS, crosshair mıknatıs mı? | CS2 Nuke",
-      "url": "https://www.youtube.com/shorts/dGlGTOLOOsw"
-    },
-    {
       "zaman": "2026-10-16T15:00:00.000Z",
       "tur": "Haftanın Montajı #2",
       "short": false,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-10-16T17:00:00.000Z",
-      "tur": "Haftanın En İyileri",
-      "short": false
+      "tur": "Haftanın En İyileri #2",
+      "short": false,
+      "baslik": "Cache ACE ve daha fazlası | Haftanın En İyileri #2",
+      "url": "https://www.youtube.com/watch?v=FN64KwBpY68"
     },
     {
       "zaman": "2026-10-16T19:30:00.000Z",
