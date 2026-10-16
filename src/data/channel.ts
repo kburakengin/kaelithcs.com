@@ -65,5 +65,6 @@ export const commands = [
   ["!sens", "fare ayarları"],
   ["!cross", "crosshair kodu"],
   ["!steam", "Steam profili"],
+  ["!bagis", "bağış linkleri"],
   ["!sosyal", "tüm hesaplar"],
 ] as const;
