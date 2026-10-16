@@ -23,8 +23,18 @@
     },
     {
       "zaman": "2026-10-16T15:00:00.000Z",
+      "tur": "Haftanın Montajı",
+      "short": false
+    },
+    {
+      "zaman": "2026-10-16T15:00:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-10-16T17:00:00.000Z",
+      "tur": "Haftanın En İyileri",
+      "short": false
     },
     {
       "zaman": "2026-10-17T09:30:00.000Z",
