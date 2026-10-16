@@ -64,5 +64,6 @@ export const commands = [
   ["!elo", "FACEIT ELO"],
   ["!sens", "fare ayarları"],
   ["!cross", "crosshair kodu"],
+  ["!steam", "Steam profili"],
   ["!sosyal", "tüm hesaplar"],
 ] as const;
