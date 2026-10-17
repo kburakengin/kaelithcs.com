@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-16T17:00:00.000Z",
-      "tur": "Haftanın En İyileri #2",
-      "short": false,
-      "baslik": "Cache ACE ve daha fazlası | Haftanın En İyileri #2",
-      "url": "https://www.youtube.com/watch?v=FN64KwBpY68"
-    },
-    {
       "zaman": "2026-10-16T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-17T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "ECO ECO ECO",
+      "url": "https://www.youtube.com/shorts/CUCVKzazeoo"
     },
     {
       "zaman": "2026-10-17T15:00:00.000Z",
