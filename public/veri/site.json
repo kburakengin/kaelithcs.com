@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-16T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Pistol round'da USP-S ile 3 HS | CS2 Inferno",
-      "url": "https://www.youtube.com/shorts/ouLeNhwL01k"
-    },
-    {
       "zaman": "2026-10-16T17:00:00.000Z",
       "tur": "Haftanın En İyileri #2",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-17T09:00:00.000Z",
       "tur": "Tam maç",
-      "short": false
+      "short": false,
+      "baslik": "KIL PAYI KAYBETTİK… 😩 11-13 | CS2 ANCIENT TAM MAÇ",
+      "url": "https://www.youtube.com/watch?v=wPNmTWZcl2A"
     },
     {
       "zaman": "2026-10-17T09:30:00.000Z",
