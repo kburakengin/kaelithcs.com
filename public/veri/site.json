@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-17T09:00:00.000Z",
-      "tur": "Tam maç",
-      "short": false,
-      "baslik": "KIL PAYI KAYBETTİK… 😩 11-13 | CS2 ANCIENT TAM MAÇ",
-      "url": "https://www.youtube.com/watch?v=wPNmTWZcl2A"
-    },
-    {
       "zaman": "2026-10-17T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-10-18T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #12",
+      "short": false,
+      "baslik": "BU MAÇTA NELER OLDU… 🤯, Anubis 13-10 | 2500 ELO Yolu #12",
+      "url": "https://www.youtube.com/watch?v=YBi0jbWbyCQ"
     },
     {
       "zaman": "2026-10-18T09:30:00.000Z",
