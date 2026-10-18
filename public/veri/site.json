@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-18T09:00:00.000Z",
-      "tur": "2500 ELO Yolu #12",
-      "short": false,
-      "baslik": "BU MAÇTA NELER OLDU… 🤯, Anubis 13-10 | 2500 ELO Yolu #12",
-      "url": "https://www.youtube.com/watch?v=YBi0jbWbyCQ"
-    },
-    {
       "zaman": "2026-10-18T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-10-18T17:00:00.000Z",
-      "tur": "KAELITH İFŞA",
-      "short": false
+      "tur": "KAELITH İFŞA #1",
+      "short": false,
+      "baslik": "512 ölümün 193 tanesinde elimde bomba vardı 💀 | KAELITH İFŞA #1",
+      "url": "https://www.youtube.com/watch?v=xjnZpAfb4GQ"
     },
     {
       "zaman": "2026-10-18T19:30:00.000Z",
@@ -120,6 +115,11 @@
       "zaman": "2026-10-23T19:30:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-10-25T17:00:00.000Z",
+      "tur": "KAELITH İFŞA",
+      "short": false
     }
   ],
   "elo": {
