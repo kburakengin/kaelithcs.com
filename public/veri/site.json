@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-17T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "ECO ECO ECO",
-      "url": "https://www.youtube.com/shorts/CUCVKzazeoo"
-    },
-    {
       "zaman": "2026-10-17T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-18T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Bedava T Pistol - 4K | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/KMEuJRmZUDY"
     },
     {
       "zaman": "2026-10-18T15:00:00.000Z",
