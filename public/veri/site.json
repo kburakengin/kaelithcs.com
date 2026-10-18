@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-18T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Bedava T Pistol - 4K | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/KMEuJRmZUDY"
-    },
-    {
       "zaman": "2026-10-18T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-18T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Anti Eco'da adam patlatmaca",
+      "url": "https://www.youtube.com/shorts/YeXJUQysbQ0"
     },
     {
       "zaman": "2026-10-19T09:00:00.000Z",
@@ -102,6 +97,11 @@
       "short": true
     },
     {
+      "zaman": "2026-10-23T09:00:00.000Z",
+      "tur": "Tam maç",
+      "short": false
+    },
+    {
       "zaman": "2026-10-23T09:30:00.000Z",
       "tur": "Short",
       "short": true
@@ -113,6 +113,26 @@
     },
     {
       "zaman": "2026-10-23T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-24T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-10-24T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-24T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-24T19:30:00.000Z",
       "tur": "Short",
       "short": true
     },
