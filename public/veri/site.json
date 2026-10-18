@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-17T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "AK-47 ile 3K | CS2 Inferno",
-      "url": "https://www.youtube.com/shorts/DmDv8UKSqNg"
-    },
-    {
       "zaman": "2026-10-18T09:00:00.000Z",
       "tur": "2500 ELO Yolu #12",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-18T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Ah ulan",
+      "url": "https://www.youtube.com/shorts/DtiFUEb4dlA"
     },
     {
       "zaman": "2026-10-18T17:00:00.000Z",
