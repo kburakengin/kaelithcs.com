@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-18T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Ah ulan",
-      "url": "https://www.youtube.com/shorts/DtiFUEb4dlA"
-    },
-    {
       "zaman": "2026-10-18T17:00:00.000Z",
       "tur": "KAELITH İFŞA #1",
       "short": false,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-10-19T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #13",
+      "short": false,
+      "baslik": "13-5, rakibe üzüldüm biraz 😅, Cache | 2500 ELO Yolu #13",
+      "url": "https://www.youtube.com/watch?v=j3LdYdl5a74"
     },
     {
       "zaman": "2026-10-19T09:30:00.000Z",
