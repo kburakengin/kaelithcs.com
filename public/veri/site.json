@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-18T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Anti Eco'da adam patlatmaca",
-      "url": "https://www.youtube.com/shorts/YeXJUQysbQ0"
-    },
-    {
       "zaman": "2026-10-19T09:00:00.000Z",
       "tur": "2500 ELO Yolu #13",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-19T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "AWP'de iyi ama rifle daha iyi.",
+      "url": "https://www.youtube.com/shorts/vbGUDqkbr20"
     },
     {
       "zaman": "2026-10-19T19:30:00.000Z",
