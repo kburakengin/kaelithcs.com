@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-18T17:00:00.000Z",
-      "tur": "KAELITH İFŞA #1",
-      "short": false,
-      "baslik": "512 ölümün 193 tanesinde elimde bomba vardı 💀 | KAELITH İFŞA #1",
-      "url": "https://www.youtube.com/watch?v=xjnZpAfb4GQ"
-    },
-    {
       "zaman": "2026-10-18T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-19T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "M4A4 ile 2 HS, AK-47 ile final: 3K | CS2 Inferno",
+      "url": "https://www.youtube.com/shorts/bBSabXF-UIA"
     },
     {
       "zaman": "2026-10-19T15:00:00.000Z",
