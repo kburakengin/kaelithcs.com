@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-19T09:00:00.000Z",
-      "tur": "2500 ELO Yolu #13",
-      "short": false,
-      "baslik": "13-5, rakibe üzüldüm biraz 😅, Cache | 2500 ELO Yolu #13",
-      "url": "https://www.youtube.com/watch?v=j3LdYdl5a74"
-    },
-    {
       "zaman": "2026-10-19T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-19T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Lokum geldi lokum, hacı bekir lokumu! | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/t71VhFGRJbU"
     },
     {
       "zaman": "2026-10-20T09:00:00.000Z",
