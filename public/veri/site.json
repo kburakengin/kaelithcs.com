@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-19T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "AWP'de iyi ama rifle daha iyi.",
-      "url": "https://www.youtube.com/shorts/vbGUDqkbr20"
-    },
-    {
       "zaman": "2026-10-19T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-10-21T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #14",
+      "short": false,
+      "baslik": "MAÇ BİZİM 13-9, Dust2 | 2500 ELO Yolu #14",
+      "url": "https://www.youtube.com/watch?v=_-mGQGGMlWs"
     },
     {
       "zaman": "2026-10-21T09:30:00.000Z",
@@ -155,6 +150,11 @@
       "zaman": "2026-10-27T19:30:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-10-28T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
     }
   ],
   "elo": {
