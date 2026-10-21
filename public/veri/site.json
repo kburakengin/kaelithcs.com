@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-20T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "CT'de AK-47 ile 3K, 2 HS | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/tWLzrQyLQIM"
-    },
-    {
       "zaman": "2026-10-21T09:00:00.000Z",
       "tur": "2500 ELO Yolu #14",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-21T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Azcık bekleyin geliyorum, A'dakiler insanlar.",
+      "url": "https://www.youtube.com/shorts/X39b9V8qofI"
     },
     {
       "zaman": "2026-10-21T19:30:00.000Z",
@@ -150,6 +145,11 @@
       "zaman": "2026-10-28T09:00:00.000Z",
       "tur": "2500 ELO Yolu",
       "short": false
+    },
+    {
+      "zaman": "2026-10-28T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
     }
   ],
   "elo": {
