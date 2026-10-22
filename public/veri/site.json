@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-22T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Bu nasıl 3K? | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/6_KX5AlebrQ"
-    },
-    {
       "zaman": "2026-10-22T15:00:00.000Z",
       "tur": "Haftanın Montajı #3",
       "short": false,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-10-22T17:00:00.000Z",
-      "tur": "Haftanın En İyileri",
-      "short": false
+      "tur": "Haftanın En İyileri #3",
+      "short": false,
+      "baslik": "Mirage 4K ve daha fazlası | Haftanın En İyileri #3",
+      "url": "https://www.youtube.com/watch?v=ohUW66Kldv0"
     },
     {
       "zaman": "2026-10-22T19:30:00.000Z",
