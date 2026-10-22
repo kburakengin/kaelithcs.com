@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-21T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Azcık bekleyin geliyorum, A'dakiler insanlar.",
-      "url": "https://www.youtube.com/shorts/X39b9V8qofI"
-    },
-    {
       "zaman": "2026-10-21T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-22T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Bu nasıl 3K? | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/6_KX5AlebrQ"
     },
     {
       "zaman": "2026-10-22T15:00:00.000Z",
@@ -158,6 +153,11 @@
     },
     {
       "zaman": "2026-10-28T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-29T09:30:00.000Z",
       "tur": "Short",
       "short": true
     }
