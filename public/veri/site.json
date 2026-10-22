@@ -2,13 +2,6 @@
   "takvim": [
     {
       "zaman": "2026-10-22T15:00:00.000Z",
-      "tur": "Haftanın Montajı #3",
-      "short": false,
-      "baslik": "Bir haftalık CS2, tek dakikada 🎧 | Haftanın Montajı #3",
-      "url": "https://www.youtube.com/watch?v=hzhU7-u3CLg"
-    },
-    {
-      "zaman": "2026-10-22T15:00:00.000Z",
       "tur": "Short",
       "short": true,
       "baslik": "P250 ile 3K | CS2 Cache",
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-22T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "CT'de AK-47 ile 3K, HS yok | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/n9h-vTK_CJQ"
     },
     {
       "zaman": "2026-10-23T09:00:00.000Z",
