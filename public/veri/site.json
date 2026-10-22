@@ -1,20 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-21T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Kardeşim neden ordan wallbang deniyorsun | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/-aYzg8F-aKk"
-    },
-    {
-      "zaman": "2026-10-22T09:00:00.000Z",
-      "tur": "2500 ELO Yolu #15",
-      "short": false,
-      "baslik": "RAKİBE ŞANS TANIMADIK 13-6, Inferno | 2500 ELO Yolu #15",
-      "url": "https://www.youtube.com/watch?v=Yu6Rn18aEW4"
-    },
-    {
       "zaman": "2026-10-22T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,13 +9,17 @@
     },
     {
       "zaman": "2026-10-22T15:00:00.000Z",
-      "tur": "Haftanın Montajı",
-      "short": false
+      "tur": "Haftanın Montajı #3",
+      "short": false,
+      "baslik": "Bir haftalık CS2, tek dakikada 🎧 | Haftanın Montajı #3",
+      "url": "https://www.youtube.com/watch?v=hzhU7-u3CLg"
     },
     {
       "zaman": "2026-10-22T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "P250 ile 3K | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/wrIaRIAiu3c"
     },
     {
       "zaman": "2026-10-22T17:00:00.000Z",
