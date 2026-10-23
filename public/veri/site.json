@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-22T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "P250 ile 3K | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/wrIaRIAiu3c"
-    },
-    {
       "zaman": "2026-10-22T17:00:00.000Z",
       "tur": "Haftanın En İyileri #3",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-23T09:00:00.000Z",
       "tur": "Tam maç",
-      "short": false
+      "short": false,
+      "baslik": "KIL PAYI KAYBETTİK… 😩 11-13 | CS2 ANCIENT TAM MAÇ",
+      "url": "https://www.youtube.com/watch?v=c1e2QFJSFfM"
     },
     {
       "zaman": "2026-10-23T09:30:00.000Z",
