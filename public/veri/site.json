@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-23T09:00:00.000Z",
-      "tur": "Tam maç",
-      "short": false,
-      "baslik": "KIL PAYI KAYBETTİK… 😩 11-13 | CS2 ANCIENT TAM MAÇ",
-      "url": "https://www.youtube.com/watch?v=c1e2QFJSFfM"
-    },
-    {
       "zaman": "2026-10-23T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-23T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Takımın bana ihtiyacı var. | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/PiCFRcJa5_E"
     },
     {
       "zaman": "2026-10-24T09:00:00.000Z",
