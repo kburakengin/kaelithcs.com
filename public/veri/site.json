@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-22T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "CT'de AK-47 ile 3K, HS yok | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/n9h-vTK_CJQ"
-    },
-    {
       "zaman": "2026-10-23T09:00:00.000Z",
       "tur": "Tam maç",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-23T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "AK-47 ile 3K, sonuncusu 1 HP HS | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/IvBztmDQD6A"
     },
     {
       "zaman": "2026-10-23T19:30:00.000Z",
