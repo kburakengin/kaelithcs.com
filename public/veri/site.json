@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-23T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "AK-47 3 HS ve bıçakla 4K | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/gp5VfPIIBLk"
-    },
-    {
       "zaman": "2026-10-23T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-10-24T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #16",
+      "short": false,
+      "baslik": "MAÇ BİZİM 13-11, Inferno | 2500 ELO Yolu #16",
+      "url": "https://www.youtube.com/watch?v=62wQavga5Ko"
     },
     {
       "zaman": "2026-10-24T09:30:00.000Z",
@@ -135,6 +130,16 @@
       "zaman": "2026-10-30T15:00:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-10-30T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-31T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
     }
   ],
   "elo": {
