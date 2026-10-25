@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-24T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Canı az, çok da az değil !",
-      "url": "https://www.youtube.com/shorts/Ql9OW5TDs4k"
-    },
-    {
       "zaman": "2026-10-25T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-10-25T17:00:00.000Z",
-      "tur": "KAELITH İFŞA",
-      "short": false
+      "tur": "KAELITH İFŞA #2",
+      "short": false,
+      "baslik": "92 ölümün sadece 12 tanesinde intikamım alındı 🫠 | KAELITH İFŞA #2",
+      "url": "https://www.youtube.com/watch?v=TuPu3bzrvQA"
     },
     {
       "zaman": "2026-10-25T19:30:00.000Z",
