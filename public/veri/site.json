@@ -125,10 +125,20 @@
       "zaman": "2026-10-31T09:00:00.000Z",
       "tur": "2500 ELO Yolu",
       "short": false
+    },
+    {
+      "zaman": "2026-10-31T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-10-31T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
     }
   ],
   "elo": {
-    "simdi": 2121,
+    "simdi": 2122,
     "baslangic": 2000,
     "hedef": 2500,
     "maclar": [
@@ -207,6 +217,10 @@
       {
         "zaman": "2026-10-24T00:08:09.824Z",
         "elo": 2121
+      },
+      {
+        "zaman": "2026-10-24T21:56:53.295Z",
+        "elo": 2122
       }
     ]
   },
