@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-24T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Galileo 3K | CS2 Dust 2",
-      "url": "https://www.youtube.com/shorts/aRkBijLmLDA"
-    },
-    {
       "zaman": "2026-10-24T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-25T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "UFAK BİR AWP DENEMESİ | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/OHCuLSC_e2M"
     },
     {
       "zaman": "2026-10-25T15:00:00.000Z",
