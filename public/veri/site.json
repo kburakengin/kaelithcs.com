@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-24T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "ACEEE ATIYORR",
-      "url": "https://www.youtube.com/shorts/tZIjUcoJx-8"
-    },
-    {
       "zaman": "2026-10-24T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-25T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Yapıyoruz bu sporu | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/NvB7Z7OgBlY"
     },
     {
       "zaman": "2026-10-25T17:00:00.000Z",
