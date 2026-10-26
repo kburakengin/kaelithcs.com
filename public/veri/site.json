@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-25T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "37 HP ile 3 USP-S HS alınır mı? | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/ob7bbuK4Q_k"
-    },
-    {
       "zaman": "2026-10-26T09:00:00.000Z",
       "tur": "2500 ELO Yolu #17",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-26T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Retake denemesi.",
+      "url": "https://www.youtube.com/shorts/CASw4YooFj0"
     },
     {
       "zaman": "2026-10-26T19:30:00.000Z",
