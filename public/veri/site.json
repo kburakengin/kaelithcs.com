@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-25T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Yapıyoruz bu sporu | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/NvB7Z7OgBlY"
-    },
-    {
       "zaman": "2026-10-25T17:00:00.000Z",
       "tur": "KAELITH İFŞA #2",
       "short": false,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-10-26T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #17",
+      "short": false,
+      "baslik": "Maç bizim 13-9, Dust2 | 2500 ELO Yolu #17",
+      "url": "https://www.youtube.com/watch?v=cPImL_2JkI8"
     },
     {
       "zaman": "2026-10-26T09:30:00.000Z",
