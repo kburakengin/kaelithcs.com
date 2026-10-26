@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-25T17:00:00.000Z",
-      "tur": "KAELITH İFŞA #2",
-      "short": false,
-      "baslik": "92 ölümün sadece 12 tanesinde intikamım alındı 🫠 | KAELITH İFŞA #2",
-      "url": "https://www.youtube.com/watch?v=TuPu3bzrvQA"
-    },
-    {
       "zaman": "2026-10-25T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-26T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "FACEIT 10 lobisinde AK-47 ile 2K | CS2 Dust2",
+      "url": "https://www.youtube.com/shorts/5NTYS1mhvA0"
     },
     {
       "zaman": "2026-10-26T15:00:00.000Z",
