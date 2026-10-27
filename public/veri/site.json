@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-26T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "FACEIT 10 lobisinde AK-47 ile 2K | CS2 Dust2",
-      "url": "https://www.youtube.com/shorts/5NTYS1mhvA0"
-    },
-    {
       "zaman": "2026-10-26T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-27T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Site Açılır, Clutch Atılır!",
+      "url": "https://www.youtube.com/shorts/zPUK6cOqgsc"
     },
     {
       "zaman": "2026-10-27T15:00:00.000Z",
