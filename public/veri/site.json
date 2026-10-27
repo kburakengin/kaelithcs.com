@@ -67,6 +67,11 @@
       "short": true
     },
     {
+      "zaman": "2026-10-30T09:00:00.000Z",
+      "tur": "Tam maç",
+      "short": false
+    },
+    {
       "zaman": "2026-10-30T09:30:00.000Z",
       "tur": "Short",
       "short": true
@@ -95,10 +100,55 @@
       "zaman": "2026-10-31T15:00:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-10-31T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-01T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-01T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-01T17:00:00.000Z",
+      "tur": "KAELITH İFŞA",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-01T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-02T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-02T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-02T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-02T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
     }
   ],
   "elo": {
-    "simdi": 2121,
+    "simdi": 2151,
     "baslangic": 2000,
     "hedef": 2500,
     "maclar": [
@@ -189,6 +239,18 @@
       {
         "zaman": "2026-10-25T22:11:59.682Z",
         "elo": 2121
+      },
+      {
+        "zaman": "2026-10-26T21:45:26.841Z",
+        "elo": 2151
+      },
+      {
+        "zaman": "2026-10-26T22:31:37.416Z",
+        "elo": 2181
+      },
+      {
+        "zaman": "2026-10-26T23:54:10.218Z",
+        "elo": 2151
       }
     ]
   },
