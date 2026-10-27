@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-26T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Retake denemesi.",
-      "url": "https://www.youtube.com/shorts/CASw4YooFj0"
-    },
-    {
       "zaman": "2026-10-26T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-27T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Nuke Pistol",
+      "url": "https://www.youtube.com/shorts/B4K-6JQaTQ4"
     },
     {
       "zaman": "2026-10-27T19:30:00.000Z",
