@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-26T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Ne flash beee",
-      "url": "https://www.youtube.com/shorts/aM_vt5Sn-w4"
-    },
-    {
       "zaman": "2026-10-27T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-27T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Don't be a loser, buy a defuser!",
+      "url": "https://www.youtube.com/shorts/pzm0t-G9kds"
     },
     {
       "zaman": "2026-10-28T09:00:00.000Z",
