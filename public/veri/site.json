@@ -135,6 +135,16 @@
       "zaman": "2026-11-02T19:30:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-11-03T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-03T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
     }
   ],
   "elo": {
