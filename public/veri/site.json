@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-28T09:00:00.000Z",
-      "tur": "2500 ELO Yolu #18",
-      "short": false,
-      "baslik": "2036'dan 2125'e: +89 ELO, DUST2 13-6 | 2500 ELO Yolu #18",
-      "url": "https://www.youtube.com/watch?v=siSUgg-wat0"
-    },
-    {
       "zaman": "2026-10-28T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-28T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Geldim yanına | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/47byyru5NHc"
     },
     {
       "zaman": "2026-10-29T09:30:00.000Z",
@@ -138,6 +133,11 @@
     },
     {
       "zaman": "2026-11-04T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-04T19:30:00.000Z",
       "tur": "Short",
       "short": true
     }
