@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-27T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Don't be a loser, buy a defuser!",
-      "url": "https://www.youtube.com/shorts/pzm0t-G9kds"
-    },
-    {
       "zaman": "2026-10-28T09:00:00.000Z",
       "tur": "2500 ELO Yolu #18",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-28T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "USP-S ile 3K | CS2 Train",
+      "url": "https://www.youtube.com/shorts/TsFDj_vRUEY"
     },
     {
       "zaman": "2026-10-28T19:30:00.000Z",
@@ -140,6 +135,11 @@
       "zaman": "2026-11-04T09:00:00.000Z",
       "tur": "2500 ELO Yolu",
       "short": false
+    },
+    {
+      "zaman": "2026-11-04T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
     }
   ],
   "elo": {
