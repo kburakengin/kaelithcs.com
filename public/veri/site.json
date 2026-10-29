@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-28T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Aaa 3 kişi var Enes | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/LRfOXdBjVM8"
-    },
-    {
       "zaman": "2026-10-28T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-29T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Mermi bitiyordu, 3K tamam | CS2 Dust2",
+      "url": "https://www.youtube.com/shorts/J2YgXsoIzQQ"
     },
     {
       "zaman": "2026-10-29T19:30:00.000Z",
