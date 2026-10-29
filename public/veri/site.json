@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-28T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "USP-S ile 3K | CS2 Train",
-      "url": "https://www.youtube.com/shorts/TsFDj_vRUEY"
-    },
-    {
       "zaman": "2026-10-28T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-29T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "1v4 T Side Pistol | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/TIvdNyN_pw4"
     },
     {
       "zaman": "2026-10-30T09:00:00.000Z",
@@ -135,6 +130,11 @@
       "zaman": "2026-11-04T19:30:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-11-05T19:30:00.000Z",
+      "tur": "Konuşma",
+      "short": false
     }
   ],
   "elo": {
