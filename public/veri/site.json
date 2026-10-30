@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-29T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "1v4 T Side Pistol | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/TIvdNyN_pw4"
-    },
-    {
       "zaman": "2026-10-30T09:00:00.000Z",
       "tur": "Tam maç",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-30T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Eco'da AWP'yi aldık | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/77OWC3tdK8k"
     },
     {
       "zaman": "2026-10-30T19:30:00.000Z",
