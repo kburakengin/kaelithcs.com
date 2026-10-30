@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-29T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Mermi bitiyordu, 3K tamam | CS2 Dust2",
-      "url": "https://www.youtube.com/shorts/J2YgXsoIzQQ"
-    },
-    {
       "zaman": "2026-10-29T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-30T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Son adammış ya | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/NY1A2eLih2E"
     },
     {
       "zaman": "2026-10-30T15:00:00.000Z",
