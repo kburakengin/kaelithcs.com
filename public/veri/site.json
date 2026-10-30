@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-30T09:00:00.000Z",
-      "tur": "Tam maç",
-      "short": false,
-      "baslik": "Maçı ben mi taşıyorum? | CS2 ANCIENT",
-      "url": "https://www.youtube.com/watch?v=uxftZByumbQ"
-    },
-    {
       "zaman": "2026-10-30T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-10-30T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "7 canla birseyler deniyoruz | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/sES24jlXFYg"
     },
     {
       "zaman": "2026-10-31T09:00:00.000Z",
