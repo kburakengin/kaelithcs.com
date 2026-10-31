@@ -1,45 +1,25 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-30T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Son adammış ya | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/NY1A2eLih2E"
-    },
-    {
-      "zaman": "2026-10-30T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Eco'da AWP'yi aldık | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/77OWC3tdK8k"
-    },
-    {
-      "zaman": "2026-10-30T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "7 canla birseyler deniyoruz | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/sES24jlXFYg"
-    },
-    {
-      "zaman": "2026-10-31T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
-    },
-    {
       "zaman": "2026-10-31T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Smoke'ı bekliyorum ben | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/J7HcSJQsMio"
     },
     {
       "zaman": "2026-10-31T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "2 HP kaldık yine oynuyoruz | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/0rZocaLKaKc"
     },
     {
       "zaman": "2026-10-31T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Bu nasıl 3K? | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/udzd5yxoFo4"
     },
     {
       "zaman": "2026-11-01T09:30:00.000Z",
