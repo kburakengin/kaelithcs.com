@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-31T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "2 HP kaldık yine oynuyoruz | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/0rZocaLKaKc"
-    },
-    {
       "zaman": "2026-10-31T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-01T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "12 canla hâlâ oyundayız | CS2 Dust2",
+      "url": "https://www.youtube.com/shorts/-JpPTV6PonU"
     },
     {
       "zaman": "2026-11-01T17:00:00.000Z",
