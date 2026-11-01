@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-10-31T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Smoke'ı bekliyorum ben | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/J7HcSJQsMio"
-    },
-    {
       "zaman": "2026-10-31T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-01T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "M4 yok mu oğlum? | CS2 Dust2",
+      "url": "https://www.youtube.com/shorts/iDx0Cpt4JM8"
     },
     {
       "zaman": "2026-11-01T15:00:00.000Z",
