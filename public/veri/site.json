@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-01T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "M4 yok mu oğlum? | CS2 Dust2",
-      "url": "https://www.youtube.com/shorts/iDx0Cpt4JM8"
-    },
-    {
       "zaman": "2026-11-01T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-01T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "100 canla devam | CS2 Dust2",
+      "url": "https://www.youtube.com/shorts/8YSBfILZDaI"
     },
     {
       "zaman": "2026-11-02T09:00:00.000Z",
