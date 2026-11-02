@@ -1,45 +1,25 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-01T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "12 canla hâlâ oyundayız | CS2 Dust2",
-      "url": "https://www.youtube.com/shorts/-JpPTV6PonU"
-    },
-    {
-      "zaman": "2026-11-01T17:00:00.000Z",
-      "tur": "KAELITH İFŞA #3",
-      "short": false,
-      "baslik": "28 kez elimde bıçakla öldüm 🔪 | KAELITH İFŞA #3",
-      "url": "https://www.youtube.com/watch?v=4fksTYnRXGY"
-    },
-    {
-      "zaman": "2026-11-01T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "100 canla devam | CS2 Dust2",
-      "url": "https://www.youtube.com/shorts/8YSBfILZDaI"
-    },
-    {
-      "zaman": "2026-11-02T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
-    },
-    {
       "zaman": "2026-11-02T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "6 canla hâlâ oynuyoruz | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/tCFYcMGm8Rc"
     },
     {
       "zaman": "2026-11-02T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Bu nasıl 4K? | CS2 Inferno",
+      "url": "https://www.youtube.com/shorts/oUU3CwS2Tm0"
     },
     {
       "zaman": "2026-11-02T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Patlatiyoruz.",
+      "url": "https://www.youtube.com/shorts/Cr3x-bPZ9Uc"
     },
     {
       "zaman": "2026-11-03T09:30:00.000Z",
@@ -62,6 +42,11 @@
       "short": false
     },
     {
+      "zaman": "2026-11-04T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
       "zaman": "2026-11-04T15:00:00.000Z",
       "tur": "Short",
       "short": true
@@ -72,7 +57,27 @@
       "short": true
     },
     {
+      "zaman": "2026-11-05T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
       "zaman": "2026-11-05T19:30:00.000Z",
+      "tur": "Konuşma",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-06T09:00:00.000Z",
+      "tur": "Tam maç",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-06T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-09T19:30:00.000Z",
       "tur": "Konuşma",
       "short": false
     }
