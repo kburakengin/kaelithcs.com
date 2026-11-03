@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-02T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Patlatiyoruz.",
-      "url": "https://www.youtube.com/shorts/Cr3x-bPZ9Uc"
-    },
-    {
       "zaman": "2026-11-03T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-03T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "B site nasıl alınır | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/VupYoksso8w"
     },
     {
       "zaman": "2026-11-04T09:00:00.000Z",
