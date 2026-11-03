@@ -1,20 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-02T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "6 canla hâlâ oynuyoruz | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/tCFYcMGm8Rc"
-    },
-    {
-      "zaman": "2026-11-02T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Bu nasıl 4K? | CS2 Inferno",
-      "url": "https://www.youtube.com/shorts/oUU3CwS2Tm0"
-    },
-    {
       "zaman": "2026-11-02T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,12 +10,16 @@
     {
       "zaman": "2026-11-03T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "PATLADI",
+      "url": "https://www.youtube.com/shorts/2OreN-3u_eI"
     },
     {
       "zaman": "2026-11-03T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Bir saniyede ortalık karıştı | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/RC9k35LXKtM"
     },
     {
       "zaman": "2026-11-03T19:30:00.000Z",
@@ -144,6 +134,11 @@
     {
       "zaman": "2026-11-09T19:30:00.000Z",
       "tur": "Konuşma",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-10T15:00:00.000Z",
+      "tur": "Silah Derlemesi",
       "short": false
     }
   ],
