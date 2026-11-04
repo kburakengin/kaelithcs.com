@@ -1,45 +1,25 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-03T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "PATLADI",
-      "url": "https://www.youtube.com/shorts/2OreN-3u_eI"
-    },
-    {
-      "zaman": "2026-11-03T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Bir saniyede ortalık karıştı | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/RC9k35LXKtM"
-    },
-    {
-      "zaman": "2026-11-03T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "B site nasıl alınır | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/VupYoksso8w"
-    },
-    {
-      "zaman": "2026-11-04T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
-    },
-    {
       "zaman": "2026-11-04T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "O da öldü | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/AKrmA77Th1E"
     },
     {
       "zaman": "2026-11-04T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Ne tutuyorum yaa? | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/wXTOK5rP0oU"
     },
     {
       "zaman": "2026-11-04T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "B Site Nasıl Tutulur | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/TYFAEWZxDNk"
     },
     {
       "zaman": "2026-11-05T09:30:00.000Z",
