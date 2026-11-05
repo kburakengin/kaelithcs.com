@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-04T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Ne tutuyorum yaa? | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/wXTOK5rP0oU"
-    },
-    {
       "zaman": "2026-11-04T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-05T19:30:00.000Z",
       "tur": "Konuşma",
-      "short": false
+      "short": false,
+      "baslik": "\"Dinlemiyorsunuz ki\" | CS2 Inferno",
+      "url": "https://www.youtube.com/watch?v=4j7uyptlVVE"
     },
     {
       "zaman": "2026-11-06T09:00:00.000Z",
