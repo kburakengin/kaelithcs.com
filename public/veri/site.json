@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-05T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Helal | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/L5txbTItRGw"
-    },
-    {
       "zaman": "2026-11-05T19:30:00.000Z",
       "tur": "Konuşma",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-06T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Eco roundda iş çıktı | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/R8C1rB_p31Q"
     },
     {
       "zaman": "2026-11-06T15:00:00.000Z",
