@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-04T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "B Site Nasıl Tutulur | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/TYFAEWZxDNk"
-    },
-    {
       "zaman": "2026-11-05T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-06T09:00:00.000Z",
       "tur": "Tam maç",
-      "short": false
+      "short": false,
+      "baslik": "PİSTOLLARI VERDİK, MAÇI VERMEDİK | CS2 INFERNO",
+      "url": "https://www.youtube.com/watch?v=gKdspbaG4HM"
     },
     {
       "zaman": "2026-11-06T09:30:00.000Z",
