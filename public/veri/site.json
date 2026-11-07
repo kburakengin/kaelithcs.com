@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-06T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Eco'da biraz zorladık | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/-wNSlWm7718"
-    },
-    {
       "zaman": "2026-11-07T09:00:00.000Z",
       "tur": "2500 ELO Yolu #22",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-07T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Bravooooo",
+      "url": "https://www.youtube.com/shorts/Ye0KMvAn9lw"
     },
     {
       "zaman": "2026-11-07T19:30:00.000Z",
