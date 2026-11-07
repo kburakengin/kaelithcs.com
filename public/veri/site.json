@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-06T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Eco roundda iş çıktı | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/R8C1rB_p31Q"
-    },
-    {
       "zaman": "2026-11-06T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-11-07T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #22",
+      "short": false,
+      "baslik": "2 maç üst üste gitti, 2136'ya düştüm | 2500 ELO Yolu #22",
+      "url": "https://www.youtube.com/watch?v=pVsDuSzDDe4"
     },
     {
       "zaman": "2026-11-07T09:30:00.000Z",
@@ -88,7 +83,7 @@
     }
   ],
   "elo": {
-    "simdi": 2089,
+    "simdi": 2119,
     "baslangic": 2000,
     "hedef": 2500,
     "maclar": [
@@ -287,6 +282,10 @@
       {
         "zaman": "2026-11-06T23:32:24.249Z",
         "elo": 2089
+      },
+      {
+        "zaman": "2026-11-07T00:39:57.545Z",
+        "elo": 2119
       }
     ]
   },
