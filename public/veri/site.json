@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-07T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Bravooooo",
-      "url": "https://www.youtube.com/shorts/Ye0KMvAn9lw"
-    },
-    {
       "zaman": "2026-11-07T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-08T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Bir anda iki kafa daha | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/EgHIEzPVdwc"
     },
     {
       "zaman": "2026-11-08T17:00:00.000Z",
