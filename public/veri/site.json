@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-08T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Mid nasıl alınır? | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/wRUXpiPGcKM"
-    },
-    {
       "zaman": "2026-11-08T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-08T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Bravo be | CS2 Dust2",
+      "url": "https://www.youtube.com/shorts/v3wCmLlUanY"
     },
     {
       "zaman": "2026-11-09T09:00:00.000Z",
