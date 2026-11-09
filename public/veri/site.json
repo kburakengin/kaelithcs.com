@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-08T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Bravo be | CS2 Dust2",
-      "url": "https://www.youtube.com/shorts/v3wCmLlUanY"
-    },
-    {
       "zaman": "2026-11-09T09:00:00.000Z",
       "tur": "2500 ELO Yolu #23",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-09T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Sürekli beni oraya buraya koşuyorlar! | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/QorG6nrvjtg"
     },
     {
       "zaman": "2026-11-09T19:30:00.000Z",
@@ -143,6 +138,11 @@
     },
     {
       "zaman": "2026-11-16T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-16T15:00:00.000Z",
       "tur": "Short",
       "short": true
     }
