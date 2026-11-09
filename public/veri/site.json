@@ -42,13 +42,103 @@
       "short": false
     },
     {
+      "zaman": "2026-11-10T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
       "zaman": "2026-11-10T15:00:00.000Z",
       "tur": "Silah Derlemesi",
       "short": false
+    },
+    {
+      "zaman": "2026-11-10T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-11T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-11T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-11T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-11T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-12T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-12T19:30:00.000Z",
+      "tur": "Konuşma",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-13T09:00:00.000Z",
+      "tur": "Tam maç",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-13T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-13T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-14T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-14T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-14T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-14T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-15T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-15T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-15T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
     }
   ],
   "elo": {
-    "simdi": 2119,
+    "simdi": 2149,
     "baslangic": 2000,
     "hedef": 2500,
     "maclar": [
