@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-08T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Bir anda iki kafa daha | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/EgHIEzPVdwc"
-    },
-    {
       "zaman": "2026-11-08T17:00:00.000Z",
       "tur": "KAELITH İFŞA #4",
       "short": false,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-11-09T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #23",
+      "short": false,
+      "baslik": "2136'dan 2138'e: +2 ELO, CACHE 13-11 | 2500 ELO Yolu #23",
+      "url": "https://www.youtube.com/watch?v=4iruct2fxuQ"
     },
     {
       "zaman": "2026-11-09T09:30:00.000Z",
@@ -92,6 +87,11 @@
       "short": false
     },
     {
+      "zaman": "2026-11-13T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
       "zaman": "2026-11-13T15:00:00.000Z",
       "tur": "Short",
       "short": true
@@ -132,9 +132,19 @@
       "short": true
     },
     {
+      "zaman": "2026-11-15T17:00:00.000Z",
+      "tur": "KAELITH İFŞA",
+      "short": false
+    },
+    {
       "zaman": "2026-11-15T19:30:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-11-16T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
     }
   ],
   "elo": {
