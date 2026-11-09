@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-09T09:00:00.000Z",
-      "tur": "2500 ELO Yolu #23",
-      "short": false,
-      "baslik": "2136'dan 2138'e: +2 ELO, CACHE 13-11 | 2500 ELO Yolu #23",
-      "url": "https://www.youtube.com/watch?v=4iruct2fxuQ"
-    },
-    {
       "zaman": "2026-11-09T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-09T19:30:00.000Z",
       "tur": "Konuşma",
-      "short": false
+      "short": false,
+      "baslik": "\"Ben bayağıdır bot var sanıyorum\" | CS2 Inferno",
+      "url": "https://www.youtube.com/watch?v=L1ODpguuzoc"
     },
     {
       "zaman": "2026-11-10T09:30:00.000Z",
@@ -145,6 +140,11 @@
       "zaman": "2026-11-16T15:00:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-11-16T19:30:00.000Z",
+      "tur": "Konuşma",
+      "short": false
     }
   ],
   "elo": {
