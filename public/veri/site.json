@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-08T17:00:00.000Z",
-      "tur": "KAELITH İFŞA #4",
-      "short": false,
-      "baslik": "737 ölümün 349 tanesi sıfır kill'le 😶 | KAELITH İFŞA #4",
-      "url": "https://www.youtube.com/watch?v=2A6dwPfL1EQ"
-    },
-    {
       "zaman": "2026-11-08T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-09T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Pistol B site entry | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/nc1ZYVmwMno"
     },
     {
       "zaman": "2026-11-09T15:00:00.000Z",
@@ -145,6 +140,11 @@
       "zaman": "2026-11-16T09:00:00.000Z",
       "tur": "2500 ELO Yolu",
       "short": false
+    },
+    {
+      "zaman": "2026-11-16T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
     }
   ],
   "elo": {
