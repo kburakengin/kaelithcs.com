@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-09T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Sürekli beni oraya buraya koşuyorlar! | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/QorG6nrvjtg"
-    },
-    {
       "zaman": "2026-11-09T19:30:00.000Z",
       "tur": "Konuşma",
       "short": false,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-11-10T15:00:00.000Z",
-      "tur": "Silah Derlemesi",
-      "short": false
+      "tur": "Silah Derlemesi #1",
+      "short": false,
+      "baslik": "24 AWP KILL, TEK ŞARKIDA | CS2",
+      "url": "https://www.youtube.com/watch?v=imy4WH62Ltw"
     },
     {
       "zaman": "2026-11-10T19:30:00.000Z",
