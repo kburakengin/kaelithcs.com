@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-09T19:30:00.000Z",
-      "tur": "Konuşma",
-      "short": false,
-      "baslik": "\"Ben bayağıdır bot var sanıyorum\" | CS2 Inferno",
-      "url": "https://www.youtube.com/watch?v=L1ODpguuzoc"
-    },
-    {
       "zaman": "2026-11-10T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-10T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Clutch bizim işimiz",
+      "url": "https://www.youtube.com/shorts/xGYnvMmh9n4"
     },
     {
       "zaman": "2026-11-11T09:00:00.000Z",
