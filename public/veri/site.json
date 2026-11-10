@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-09T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Pistol B site entry | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/nc1ZYVmwMno"
-    },
-    {
       "zaman": "2026-11-09T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-10T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Nasıl kafaya gitti anlamadım ama | CS2 Ancient",
+      "url": "https://www.youtube.com/shorts/LmqT9gI3vsE"
     },
     {
       "zaman": "2026-11-10T15:00:00.000Z",
