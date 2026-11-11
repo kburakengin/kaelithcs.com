@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-11T09:00:00.000Z",
-      "tur": "2500 ELO Yolu #24",
-      "short": false,
-      "baslik": "7-13… NE TERS GİTTİ? 😤 | CS2 ANUBIS TAM MAÇ",
-      "url": "https://www.youtube.com/watch?v=S8DdNEDOdgI"
-    },
-    {
       "zaman": "2026-11-11T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-11T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Bu nasıl 3K? | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/J4zjcj2DEsg"
     },
     {
       "zaman": "2026-11-12T09:30:00.000Z",
