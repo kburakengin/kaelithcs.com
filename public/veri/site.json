@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-10T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Nasıl kafaya gitti anlamadım ama | CS2 Ancient",
-      "url": "https://www.youtube.com/shorts/LmqT9gI3vsE"
-    },
-    {
       "zaman": "2026-11-10T15:00:00.000Z",
       "tur": "Silah Derlemesi #1",
       "short": false,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-11-11T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #24",
+      "short": false,
+      "baslik": "7-13… NE TERS GİTTİ? 😤 | CS2 ANUBIS TAM MAÇ",
+      "url": "https://www.youtube.com/watch?v=S8DdNEDOdgI"
     },
     {
       "zaman": "2026-11-11T09:30:00.000Z",
@@ -133,7 +128,7 @@
     }
   ],
   "elo": {
-    "simdi": 2169,
+    "simdi": 2148,
     "baslangic": 2000,
     "hedef": 2500,
     "maclar": [
@@ -344,6 +339,14 @@
       {
         "zaman": "2026-11-09T23:10:16.989Z",
         "elo": 2169
+      },
+      {
+        "zaman": "2026-11-10T20:30:26.446Z",
+        "elo": 2158
+      },
+      {
+        "zaman": "2026-11-10T21:14:43.698Z",
+        "elo": 2148
       }
     ]
   },
