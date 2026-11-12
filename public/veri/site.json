@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-11T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Geçemediniz mi anam",
-      "url": "https://www.youtube.com/shorts/wRsZ35flF2A"
-    },
-    {
       "zaman": "2026-11-11T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-12T19:30:00.000Z",
       "tur": "Konuşma",
-      "short": false
+      "short": false,
+      "baslik": "Ben ölmedim, rakip haksızlık yaptı | CS2 Anubis",
+      "url": "https://www.youtube.com/watch?v=sXHNy58MAgc"
     },
     {
       "zaman": "2026-11-13T09:00:00.000Z",
