@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-12T19:30:00.000Z",
-      "tur": "Konuşma",
-      "short": false,
-      "baslik": "Ben ölmedim, rakip haksızlık yaptı | CS2 Anubis",
-      "url": "https://www.youtube.com/watch?v=sXHNy58MAgc"
-    },
-    {
       "zaman": "2026-11-13T09:00:00.000Z",
       "tur": "Tam maç",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-13T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "1v4 Clutch  | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/PTIE_Jglro0"
     },
     {
       "zaman": "2026-11-13T19:30:00.000Z",
@@ -133,6 +128,11 @@
     },
     {
       "zaman": "2026-11-20T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-20T15:00:00.000Z",
       "tur": "Short",
       "short": true
     }
