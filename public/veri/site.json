@@ -90,6 +90,11 @@
       "zaman": "2026-11-16T19:30:00.000Z",
       "tur": "Konuşma",
       "short": false
+    },
+    {
+      "zaman": "2026-11-17T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
     }
   ],
   "elo": {
