@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-11T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Bu nasıl 3K? | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/J4zjcj2DEsg"
-    },
-    {
       "zaman": "2026-11-12T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-13T09:00:00.000Z",
       "tur": "Tam maç",
-      "short": false
+      "short": false,
+      "baslik": "Bu maçta neler oldu… 🤯 CS2 Train 13-3",
+      "url": "https://www.youtube.com/watch?v=t623x9uEaNs"
     },
     {
       "zaman": "2026-11-13T09:30:00.000Z",
