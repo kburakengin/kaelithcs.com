@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-12T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "4 kişiyle uğraşıyoruz | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/Exu0gSz8kPI"
-    },
-    {
       "zaman": "2026-11-12T19:30:00.000Z",
       "tur": "Konuşma",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-13T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "FACEIT 10 lobisinde Galil ile 3K | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/dwdCdoj6izE"
     },
     {
       "zaman": "2026-11-13T15:00:00.000Z",
