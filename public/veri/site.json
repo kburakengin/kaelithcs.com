@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-13T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "FACEIT 10 lobisinde Galil ile 3K | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/dwdCdoj6izE"
-    },
-    {
       "zaman": "2026-11-13T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-11-14T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #24",
+      "short": false,
+      "baslik": "2135'TEN 2155'E: +20 ELO, ANUBIS 13-8 | 2500 ELO Yolu #24",
+      "url": "https://www.youtube.com/watch?v=K7e_1qReKaI"
     },
     {
       "zaman": "2026-11-14T09:30:00.000Z",
