@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-13T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Süre yok ama deneyeceğim | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/isLwOC-NP-U"
-    },
-    {
       "zaman": "2026-11-14T09:00:00.000Z",
       "tur": "2500 ELO Yolu #24",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-14T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Kafalar peş peşe geldi | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/m6O8gjJDwNk"
     },
     {
       "zaman": "2026-11-14T19:30:00.000Z",
