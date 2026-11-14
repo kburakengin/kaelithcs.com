@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-14T09:00:00.000Z",
-      "tur": "2500 ELO Yolu #24",
-      "short": false,
-      "baslik": "2135'TEN 2155'E: +20 ELO, ANUBIS 13-8 | 2500 ELO Yolu #24",
-      "url": "https://www.youtube.com/watch?v=K7e_1qReKaI"
-    },
-    {
       "zaman": "2026-11-14T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-14T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "3 kişi 3 kafa, sadece kafa | CS2 Nuke",
+      "url": "https://www.youtube.com/shorts/W0KSTiKHVyI"
     },
     {
       "zaman": "2026-11-15T09:30:00.000Z",
