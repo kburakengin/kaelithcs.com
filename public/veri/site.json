@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-13T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "1v4 Clutch  | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/PTIE_Jglro0"
-    },
-    {
       "zaman": "2026-11-13T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-14T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "2 Saniyede 3 kill",
+      "url": "https://www.youtube.com/shorts/GMg5Rw2eiqY"
     },
     {
       "zaman": "2026-11-14T15:00:00.000Z",
