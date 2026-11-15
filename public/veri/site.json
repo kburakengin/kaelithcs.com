@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-14T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "3 kişi 3 kafa, sadece kafa | CS2 Nuke",
-      "url": "https://www.youtube.com/shorts/W0KSTiKHVyI"
-    },
-    {
       "zaman": "2026-11-15T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-11-15T17:00:00.000Z",
-      "tur": "KAELITH İFŞA",
-      "short": false
+      "tur": "KAELITH İFŞA #5",
+      "short": false,
+      "baslik": "39 AWP, 185.250 $ yere 🫠 | KAELITH İFŞA #5",
+      "url": "https://www.youtube.com/watch?v=oxDQnco1le8"
     },
     {
       "zaman": "2026-11-15T19:30:00.000Z",
