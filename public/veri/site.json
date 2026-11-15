@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-15T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Az kalmıştı...",
-      "url": "https://www.youtube.com/shorts/d2u54Ry3Vxo"
-    },
-    {
       "zaman": "2026-11-15T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-15T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "A Site Hold | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/n7nW6hUunXk"
     },
     {
       "zaman": "2026-11-16T09:00:00.000Z",
