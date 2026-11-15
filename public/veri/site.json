@@ -77,6 +77,11 @@
       "short": false
     },
     {
+      "zaman": "2026-11-18T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
       "zaman": "2026-11-18T15:00:00.000Z",
       "tur": "Short",
       "short": true
@@ -115,10 +120,25 @@
       "zaman": "2026-11-20T19:30:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-11-21T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-21T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-21T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
     }
   ],
   "elo": {
-    "simdi": 2171,
+    "simdi": 2170,
     "baslangic": 2000,
     "hedef": 2500,
     "maclar": [
@@ -357,6 +377,14 @@
       {
         "zaman": "2026-11-13T23:41:51.551Z",
         "elo": 2171
+      },
+      {
+        "zaman": "2026-11-14T21:59:50.306Z",
+        "elo": 2159
+      },
+      {
+        "zaman": "2026-11-14T23:02:25.762Z",
+        "elo": 2170
       }
     ]
   },
