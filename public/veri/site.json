@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-16T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Adamsın | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/5iwqprnyK4Y"
-    },
-    {
       "zaman": "2026-11-16T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-17T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "ACE",
+      "url": "https://www.youtube.com/shorts/0fM9E7KzA9A"
     },
     {
       "zaman": "2026-11-17T19:30:00.000Z",
