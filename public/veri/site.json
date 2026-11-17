@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-16T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Retake retake retake",
-      "url": "https://www.youtube.com/shorts/FFw0JMiDcJo"
-    },
-    {
       "zaman": "2026-11-16T19:30:00.000Z",
       "tur": "Konuşma",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-17T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Bir saniye | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/F7wNMtQs1Og"
     },
     {
       "zaman": "2026-11-18T09:00:00.000Z",
