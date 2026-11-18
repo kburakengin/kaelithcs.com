@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-16T19:30:00.000Z",
-      "tur": "Konuşma",
-      "short": false,
-      "baslik": "Bıçaklayacağım dedi, sözünü tuttu | CS2 Mirage",
-      "url": "https://www.youtube.com/watch?v=wEHq9JEfIqs"
-    },
-    {
       "zaman": "2026-11-17T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-11-18T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #26",
+      "short": false,
+      "baslik": "2 MAÇ ÜST ÜSTE GİTTİ, 2116'YA DÜŞTÜM | 2500 ELO Yolu #26",
+      "url": "https://www.youtube.com/watch?v=w9ARl927MzE"
     },
     {
       "zaman": "2026-11-18T09:30:00.000Z",
