@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-19T19:30:00.000Z",
-      "tur": "Konuşma",
-      "short": false,
-      "baslik": "Adamlar T spawn'dan bizden önce geliyor | Kaelith CS2",
-      "url": "https://www.youtube.com/watch?v=gVtxuu7SPFI"
-    },
-    {
       "zaman": "2026-11-20T09:00:00.000Z",
       "tur": "Tam maç",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-20T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "4K, sonuncusu 9 HP ile 🏥 | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/XXUErMo54f0"
     },
     {
       "zaman": "2026-11-20T19:30:00.000Z",
@@ -130,6 +125,11 @@
       "zaman": "2026-11-27T09:00:00.000Z",
       "tur": "Tam maç",
       "short": false
+    },
+    {
+      "zaman": "2026-11-27T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
     }
   ],
   "elo": {
