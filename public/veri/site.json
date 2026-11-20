@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-19T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Az canla patlatıyoruz.",
-      "url": "https://www.youtube.com/shorts/0699bUBVppI"
-    },
-    {
       "zaman": "2026-11-19T19:30:00.000Z",
       "tur": "Konuşma",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-20T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "B Site Entry | CS2 Cache",
+      "url": "https://www.youtube.com/shorts/7Rz8qUJv5A8"
     },
     {
       "zaman": "2026-11-20T15:00:00.000Z",
