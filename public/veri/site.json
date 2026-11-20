@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-20T09:00:00.000Z",
-      "tur": "Tam maç",
-      "short": false,
-      "baslik": "RAKİBE ŞANS TANIMADIK 😤 13-4 | CS2 CACHE TAM MAÇ",
-      "url": "https://www.youtube.com/watch?v=ztVKMWX5ipA"
-    },
-    {
       "zaman": "2026-11-20T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-20T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "EZ FOR ENCE | CS2 Ancient",
+      "url": "https://www.youtube.com/shorts/aYgqL_Q8Udk"
     },
     {
       "zaman": "2026-11-21T09:00:00.000Z",
@@ -128,6 +123,11 @@
     },
     {
       "zaman": "2026-11-27T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-27T19:30:00.000Z",
       "tur": "Short",
       "short": true
     }
