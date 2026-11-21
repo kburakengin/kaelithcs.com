@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-20T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "B Site Entry | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/7Rz8qUJv5A8"
-    },
-    {
       "zaman": "2026-11-20T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-11-21T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #27",
+      "short": false,
+      "baslik": "2116'dan 2117'ye: +1 ELO, ANUBIS 19-15 | 2500 ELO Yolu #27",
+      "url": "https://www.youtube.com/watch?v=BJF6gMwCIw4"
     },
     {
       "zaman": "2026-11-21T09:30:00.000Z",
