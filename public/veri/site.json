@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-20T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "EZ FOR ENCE | CS2 Ancient",
-      "url": "https://www.youtube.com/shorts/aYgqL_Q8Udk"
-    },
-    {
       "zaman": "2026-11-21T09:00:00.000Z",
       "tur": "2500 ELO Yolu #27",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-21T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "AK-47 ile 3K | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/Ms3OH5_b214"
     },
     {
       "zaman": "2026-11-21T19:30:00.000Z",
