@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-21T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "AK-47 ile 3K | CS2 Mirage",
-      "url": "https://www.youtube.com/shorts/Ms3OH5_b214"
-    },
-    {
       "zaman": "2026-11-21T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-22T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "TAM XANTARES DÜŞÜNÜYORDUM! | CS2 Dust2",
+      "url": "https://www.youtube.com/shorts/kpMtFNeFkIk"
     },
     {
       "zaman": "2026-11-22T19:30:00.000Z",
