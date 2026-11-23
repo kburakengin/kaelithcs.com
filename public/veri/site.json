@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-22T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Long'a dikkat et! | CS2 Dust2",
-      "url": "https://www.youtube.com/shorts/WkLD4dJFsHg"
-    },
-    {
       "zaman": "2026-11-23T09:00:00.000Z",
       "tur": "2500 ELO Yolu #28",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-23T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "OLDUĞU KADAR | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/1722U466XrU"
     },
     {
       "zaman": "2026-11-24T09:30:00.000Z",
