@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-22T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "LOKUMMMM",
-      "url": "https://www.youtube.com/shorts/x9-0bPMZ0JY"
-    },
-    {
       "zaman": "2026-11-22T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-11-23T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #28",
+      "short": false,
+      "baslik": "2117'Den 2118'e: +1 ELO, Inferno 16-14 | 2500 ELO Yolu #28",
+      "url": "https://www.youtube.com/watch?v=DbbLcsxnvSQ"
     },
     {
       "zaman": "2026-11-23T09:30:00.000Z",
