@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-22T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "TAM XANTARES DÜŞÜNÜYORDUM! | CS2 Dust2",
-      "url": "https://www.youtube.com/shorts/kpMtFNeFkIk"
-    },
-    {
       "zaman": "2026-11-22T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-23T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "One tap'le başladı, ace'le bitti | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/trJV_tgYfWk"
     },
     {
       "zaman": "2026-11-23T15:00:00.000Z",
