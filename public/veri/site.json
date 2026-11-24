@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-23T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "One tap'le başladı, ace'le bitti | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/trJV_tgYfWk"
-    },
-    {
       "zaman": "2026-11-23T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-24T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Sen nesin be? | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/j7bmhz45BZ4"
     },
     {
       "zaman": "2026-11-24T19:30:00.000Z",
@@ -75,6 +70,11 @@
       "zaman": "2026-11-27T19:30:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-12-01T15:00:00.000Z",
+      "tur": "Silah Derlemesi",
+      "short": false
     }
   ],
   "elo": {
