@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-24T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Sen nesin be? | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/j7bmhz45BZ4"
-    },
-    {
       "zaman": "2026-11-24T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-25T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "SİNSİ NASIL SAKLANMIŞ! | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/0caOWrTFR5w"
     },
     {
       "zaman": "2026-11-25T15:00:00.000Z",
