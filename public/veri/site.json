@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-25T09:00:00.000Z",
-      "tur": "2500 ELO Yolu #29",
-      "short": false,
-      "baslik": "2118'den 2120'ye: +2 ELO, ANUBIS 13-11 | 2500 ELO Yolu #29",
-      "url": "https://www.youtube.com/watch?v=JkQ4pRWpglk"
-    },
-    {
       "zaman": "2026-11-25T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-25T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Gel bakalım kucağıma | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/sOCNy1DzS8s"
     },
     {
       "zaman": "2026-11-26T09:30:00.000Z",
