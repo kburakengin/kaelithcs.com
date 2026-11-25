@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-24T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Nerede gelse vuracağım | CS2 Inferno",
-      "url": "https://www.youtube.com/shorts/FZVwnJrhoWE"
-    },
-    {
       "zaman": "2026-11-25T09:00:00.000Z",
       "tur": "2500 ELO Yolu #29",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-25T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Öldü, öldü! | CS2 Dust2",
+      "url": "https://www.youtube.com/shorts/4xMCoCKZ3aI"
     },
     {
       "zaman": "2026-11-25T19:30:00.000Z",
