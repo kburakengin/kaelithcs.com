@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-25T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "SİNSİ NASIL SAKLANMIŞ! | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/0caOWrTFR5w"
-    },
-    {
       "zaman": "2026-11-25T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-26T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Anubis Mid Nasıl Alınır ?",
+      "url": "https://www.youtube.com/shorts/b99SmjPyHoo"
     },
     {
       "zaman": "2026-11-26T19:30:00.000Z",
