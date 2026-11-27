@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-25T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Gel bakalım kucağıma | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/sOCNy1DzS8s"
-    },
-    {
       "zaman": "2026-11-26T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,14 @@
     {
       "zaman": "2026-11-27T09:00:00.000Z",
       "tur": "Tam maç",
-      "short": false
+      "short": false,
+      "baslik": "Bu maçta neler oldu… 🤯 CS2 Dust2 13-10",
+      "url": "https://www.youtube.com/watch?v=Dp303QBeu4I"
+    },
+    {
+      "zaman": "2026-11-27T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
     },
     {
       "zaman": "2026-11-27T15:00:00.000Z",
@@ -37,8 +37,73 @@
       "short": true
     },
     {
+      "zaman": "2026-11-28T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-28T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-28T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-28T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-29T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-29T17:00:00.000Z",
+      "tur": "KAELITH İFŞA",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-29T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-30T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
+    },
+    {
+      "zaman": "2026-11-30T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-11-30T19:30:00.000Z",
+      "tur": "Konuşma",
+      "short": false
+    },
+    {
+      "zaman": "2026-12-01T09:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
       "zaman": "2026-12-01T15:00:00.000Z",
       "tur": "Silah Derlemesi",
+      "short": false
+    },
+    {
+      "zaman": "2026-12-01T19:30:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-12-02T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
       "short": false
     }
   ],
