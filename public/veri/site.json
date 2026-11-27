@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-27T09:00:00.000Z",
-      "tur": "Tam maç",
-      "short": false,
-      "baslik": "Bu maçta neler oldu… 🤯 CS2 Dust2 13-10",
-      "url": "https://www.youtube.com/watch?v=Dp303QBeu4I"
-    },
-    {
       "zaman": "2026-11-27T09:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-27T19:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "MID YÜRÜYEN BAYILDI | CS2 Anubis",
+      "url": "https://www.youtube.com/shorts/8NgGeO23z9Y"
     },
     {
       "zaman": "2026-11-28T09:00:00.000Z",
@@ -98,6 +93,11 @@
     },
     {
       "zaman": "2026-12-02T15:00:00.000Z",
+      "tur": "Short",
+      "short": true
+    },
+    {
+      "zaman": "2026-12-04T19:30:00.000Z",
       "tur": "Short",
       "short": true
     }
