@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-26T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Anubis Mid Nasıl Alınır ?",
-      "url": "https://www.youtube.com/shorts/b99SmjPyHoo"
-    },
-    {
       "zaman": "2026-11-26T19:30:00.000Z",
       "tur": "Konuşma",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-27T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Bunu yapmak yasal olmamalı 🤯 5K | CS2 Cbble",
+      "url": "https://www.youtube.com/shorts/2K7F4PNfgcw"
     },
     {
       "zaman": "2026-11-27T15:00:00.000Z",
