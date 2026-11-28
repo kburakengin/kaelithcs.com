@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-27T15:00:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "KLASİK JUAN DEAG | CS2 Cache",
-      "url": "https://www.youtube.com/shorts/QfxrtIx-ZJc"
-    },
-    {
       "zaman": "2026-11-27T19:30:00.000Z",
       "tur": "Short",
       "short": true,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-28T09:30:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Bu nasıl 4K? | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/BhVCxEWThfo"
     },
     {
       "zaman": "2026-11-28T15:00:00.000Z",
