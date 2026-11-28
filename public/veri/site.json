@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-27T09:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "Bunu yapmak yasal olmamalı 🤯 5K | CS2 Cbble",
-      "url": "https://www.youtube.com/shorts/2K7F4PNfgcw"
-    },
-    {
       "zaman": "2026-11-27T15:00:00.000Z",
       "tur": "Short",
       "short": true,
@@ -23,8 +16,10 @@
     },
     {
       "zaman": "2026-11-28T09:00:00.000Z",
-      "tur": "2500 ELO Yolu",
-      "short": false
+      "tur": "2500 ELO Yolu #30",
+      "short": false,
+      "baslik": "2120'DEN 2123'E: +3 ELO, MIRAGE 13-1 | 2500 ELO Yolu #30",
+      "url": "https://www.youtube.com/watch?v=vG0yeDgI0fk"
     },
     {
       "zaman": "2026-11-28T09:30:00.000Z",
@@ -95,6 +90,11 @@
       "zaman": "2026-12-04T19:30:00.000Z",
       "tur": "Short",
       "short": true
+    },
+    {
+      "zaman": "2026-12-05T09:00:00.000Z",
+      "tur": "2500 ELO Yolu",
+      "short": false
     }
   ],
   "elo": {
