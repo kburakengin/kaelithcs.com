@@ -1,13 +1,6 @@
 {
   "takvim": [
     {
-      "zaman": "2026-11-27T19:30:00.000Z",
-      "tur": "Short",
-      "short": true,
-      "baslik": "MID YÜRÜYEN BAYILDI | CS2 Anubis",
-      "url": "https://www.youtube.com/shorts/8NgGeO23z9Y"
-    },
-    {
       "zaman": "2026-11-28T09:00:00.000Z",
       "tur": "2500 ELO Yolu #30",
       "short": false,
@@ -24,7 +17,9 @@
     {
       "zaman": "2026-11-28T15:00:00.000Z",
       "tur": "Short",
-      "short": true
+      "short": true,
+      "baslik": "Eco round girişi: 3K | CS2 Mirage",
+      "url": "https://www.youtube.com/shorts/Nmfk5wQjnf4"
     },
     {
       "zaman": "2026-11-28T19:30:00.000Z",
